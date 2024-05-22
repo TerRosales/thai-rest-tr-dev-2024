@@ -1,4 +1,5 @@
 import { Button, Navbar } from "flowbite-react";
+import { Link } from "react-router-dom";
 import "./styles/header.css";
 import images from "../assets/images.js";
 const Header = () => {
@@ -10,20 +11,27 @@ const Header = () => {
           alt="thai rest logo"
           className="w-24 h-24"
         />
-        <span className="absolute font-extrabold text-[14px] text-orange-700 mt-16 bg-gradient-to-tl from-yellow-200 to-purple-400 p-1 rounded-xl border-2 border-purple-900">
+        {/* <span className="absolute font-extrabold text-[14px] text-orange-700 mt-16 bg-gradient-to-tl from-yellow-200 to-purple-400 p-1 rounded-xl border-2 border-purple-900">
           Thai-Rest
-        </span>
+        </span> */}
       </Navbar.Brand>
-      <Navbar.Collapse>
-        <Navbar.Link href="/" active>
-          Home
-        </Navbar.Link>
-        <Navbar.Link href="/about">About</Navbar.Link>
-        <Navbar.Link href="/menu">Menu</Navbar.Link>
-      </Navbar.Collapse>
-      <Button className="" gradientDuoTone="purpleToPink" outline>
+      {/* <Button className="" gradientDuoTone="purpleToPink" outline>
         Combo Builder
-      </Button>
+      </Button> */}
+      <Navbar.Toggle />
+      <Navbar.Collapse>
+        <Navbar.Link>
+        <Link to="/">
+          Home
+        </Link>
+        </Navbar.Link>
+        <Navbar.Link>
+        <Link to="/about">About</Link>
+        </Navbar.Link>
+        <Navbar.Link>
+        <Link to="/menu">Menu</Link>
+        </Navbar.Link>
+      </Navbar.Collapse>
     </Navbar>
   );
 };
