@@ -1,14 +1,23 @@
 import "./global.css";
-import { Button } from "flowbite-react";
+import { Button, Timeline } from "flowbite-react";
+import { Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
+import About from "./pages/About";
+import Menu from "./pages/Menu";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <div>
-        <p className="text-red-400">Hello World</p>
-        <Button gradientDuoTone="tealToLime">Hello World</Button>
-      </div>
-    </>
+    <div>
+      <HeroSection />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 

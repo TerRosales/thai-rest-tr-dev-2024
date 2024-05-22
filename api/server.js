@@ -14,10 +14,10 @@ app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 mongoose
   .connect(process.env.PRTMONGO)
   .then(() => {
-    console.log("😁 Connected to MongoDB 😁");
+    console.log("Connected to MongoDB 😁");
     app.listen(process.env.PORT, () => {
       console.log(
-        `😁 Server is running on port ${process.env.PORT}, All Jokes aside 😁`
+        `Server is running on port ${process.env.PORT}, Happy Coding! 😁`
       );
     });
   })
