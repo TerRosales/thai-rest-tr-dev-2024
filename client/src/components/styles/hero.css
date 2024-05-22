@@ -1,6 +1,16 @@
-.headerContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ff8989;
+.heroSection {
+  background-image: url("src/assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: white;
+}
+
+.heroTitle {
+  @apply text-6xl font-bold italic text-red-500;
+}
+
+.heroIntro {
+  @apply flex flex-col text-pretty w-[40%] mx-auto;
 }

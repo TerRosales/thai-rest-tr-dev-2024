@@ -1,0 +1,7 @@
+nav {
+    @apply bg-gradient-to-tl from-yellow-300 to-white; 
+}
+
+a {
+    @apply text-red-500 font-semibold text-lg hover:text-purple-600;
+}
