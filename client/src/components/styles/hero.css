@@ -7,20 +7,15 @@
   color: white;
 }
 .heroTitle {
-  @apply text-red-500;
+  @apply text-red-600;
 }
 
 .heroIntro {
-  @apply flex flex-col text-pretty w-[60%] mt-10 mx-auto;
+  @apply flex flex-col text-pretty w-[60%] mx-auto;
 }
 
 .heroText {
-  @apply font-semibold text-base text-red-700 text-left p-5;
-  text-shadow: 1px 1px 2px rgba(3, 3, 3, 0.5);
-}
-
-.scrollBtn {
-  @apply w-[6rem] h-[6rem] flex;
+  @apply font-semibold text-lg text-red-600 text-left;
 }
 
 @media (max-width: 768px) {
@@ -29,5 +24,8 @@
   }
   .heroTitle {
     @apply text-5xl !important;
+  }
+  .header {
+    @apply pt-[33vh] pb-[15vh];
   }
 }

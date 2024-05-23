@@ -1,10 +1,17 @@
 a {
-  @apply text-red-600 font-bold text-lg hover:text-purple-600;
+  @apply text-red-600 font-bold text-lg hover:text-purple-800;
 }
 
 ul {
-  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-yellow-200 to-red-200 text-center gap-2 p-2 shadow-red-500 shadow-lg;
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-yellow-200 to-red-200 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw];
+}
+
+.scrollSpan {
+  text-shadow: 1px 1px 1px #333;
 }
 
 @media (max-width: 768px) {
+  ul {
+    @apply w-[90vw];
+  }
 }

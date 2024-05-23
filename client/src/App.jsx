@@ -6,11 +6,13 @@ import HeroSection from "./components/HeroSection";
 import About from "./pages/About";
 import Menu from "./pages/Menu";
 import Home from "./pages/Home";
+import ScrollBtn from "./components/ScrollBtn";
 
 function App() {
   return (
-    <div>
+    <div className="">
       <HeroSection />
+      <ScrollBtn />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

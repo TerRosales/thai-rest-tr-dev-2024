@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +12,10 @@
 }
 
 .mainTitle {
-  @apply text-7xl font-bold italic;
+  @apply text-5xl font-bold italic;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(43, 27, 43, 0.52)
 }
 
 .title {
@@ -20,12 +24,23 @@
 .text {
 }
 
-.textShadow {
-  text-shadow: 2px 2px 3px rgba(3, 3, 3, 0.5);
+.scroller {
+  transform: translateY(-40px);
 }
 
-.gradient {
+.scrollBtn {
+  @apply w-[6rem] h-[6rem] flex;
+}
+
+.shadow {
+  @apply shadow-slate-800 shadow-lg;
+}
+
+/* .gradient {
   @apply border-[0.5px] border-r-0 border-t-0 border-red-900 rounded-xl bg-gradient-to-t from-yellow-200 to-red-200 shadow-red-500 shadow-lg;
+} */
+.gradient {
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-yellow-200 to-red-200 text-center gap-2 p-2;
 }
 
 .gradient-2 {
