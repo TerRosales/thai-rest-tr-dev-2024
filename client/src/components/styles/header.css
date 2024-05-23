@@ -1,7 +1,10 @@
-nav {
-    @apply bg-gradient-to-tl from-yellow-300 to-white; 
+a {
+  @apply text-red-600 font-bold text-lg hover:text-purple-600;
 }
 
-a {
-    @apply text-red-500 font-semibold text-lg hover:text-purple-600;
+ul {
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-yellow-200 to-red-200 text-center gap-2 p-2 shadow-red-500 shadow-lg;
+}
+
+@media (max-width: 768px) {
 }

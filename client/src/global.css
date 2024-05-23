@@ -9,3 +9,33 @@
   margin: 0;
   padding: 0;
 }
+
+.mainTitle {
+  @apply text-7xl font-bold italic;
+}
+
+.title {
+}
+
+.text {
+}
+
+.textShadow {
+  text-shadow: 2px 2px 3px rgba(3, 3, 3, 0.5);
+}
+
+.gradient {
+  @apply border-[0.5px] border-r-0 border-t-0 border-red-900 rounded-xl bg-gradient-to-t from-yellow-200 to-red-200 shadow-red-500 shadow-lg;
+}
+
+.gradient-2 {
+}
+
+.borderLeft {
+}
+
+.borderRight {
+}
+
+.marginGap {
+}
