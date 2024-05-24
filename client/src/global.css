@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,11 +11,15 @@
   padding: 0;
 }
 
+body {
+  background-image: ;
+}
+
 .mainTitle {
   @apply text-5xl font-bold italic;
   text-decoration: underline;
   text-decoration-style: wavy;
-  text-decoration-color: rgba(43, 27, 43, 0.52)
+  text-decoration-color: rgba(43, 27, 43, 0.52);
 }
 
 .title {
@@ -25,11 +29,11 @@
 }
 
 .scroller {
-  transform: translateY(-40px);
+  transform: translateY(-23px);
 }
 
 .scrollBtn {
-  @apply w-[6rem] h-[6rem] flex;
+  @apply w-[4rem] h-[4rem] flex;
 }
 
 .shadow {
@@ -40,7 +44,7 @@
   @apply border-[0.5px] border-r-0 border-t-0 border-red-900 rounded-xl bg-gradient-to-t from-yellow-200 to-red-200 shadow-red-500 shadow-lg;
 } */
 .gradient {
-  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-yellow-200 to-red-200 text-center gap-2 p-2;
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2;
 }
 
 .gradient-2 {
