@@ -15,9 +15,6 @@ const HeroSection = () => {
       <div className="header pt-[22%] pb-[5vh]">
         <Header />
       </div>
-      <div>
-        <h2>Taste</h2>
-      </div>
     </motion.section>
   );
 };

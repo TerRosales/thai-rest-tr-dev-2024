@@ -29,3 +29,15 @@
     @apply pt-[33vh] pb-[15vh];
   }
 }
+
+@media (min-width: 350px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+}

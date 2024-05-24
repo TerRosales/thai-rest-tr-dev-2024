@@ -1,0 +1,18 @@
+.bgDisplay {
+  @apply py-[32%];
+}
+
+@media (min-width: 350px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+  .bgDisplay {
+    @apply py-[17%];
+  }
+}

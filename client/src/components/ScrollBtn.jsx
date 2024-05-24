@@ -34,7 +34,6 @@ const ScrollBtn = () => {
       transition: { duration: 1.5, repeat: Infinity },
     },
     spinAndShrink: {
-      opacity: 0,
       rotate: [0, 360],
       y: [-25, 30, 0],
       scale: [1.4, 0],

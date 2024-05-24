@@ -1,5 +1,5 @@
 a {
-  @apply shadow-black font-semibold text-lg hover:text-white hover:shadow-xl hover:font-bold;
+  @apply shadow-black font-semibold text-lg hover:text-white hover:font-bold;
 }
 
 ul {
@@ -10,8 +10,17 @@ ul {
   text-shadow: 1px 1px 1px #333;
 }
 
+@media (min-width: 350px) {
+}
+
 @media (max-width: 768px) {
   ul {
     @apply w-[90vw];
   }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
 }
