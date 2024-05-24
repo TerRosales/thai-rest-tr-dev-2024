@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,7 @@
 *,
 *::before,
 *::after {
+  font-family: "Lobster Two", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -21,7 +23,7 @@ body {
 }
 
 .marginSmall {
-  @apply m-5 p-2;
+  @apply m-5 p-5;
 }
 
 .marginLarge {
@@ -37,13 +39,9 @@ body {
 }
 
 .mainTitle {
-  @apply text-7xl font-extrabold italic;
+  @apply text-6xl font-extrabold italic;
 }
 
-.showCaseImg {
-  @apply w-[6.9rem] h-[6.9rem] rounded-lg ml-4 shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
-  transform: translateY(-2px);
-}
 .text {
 }
 
@@ -56,7 +54,7 @@ body {
 }
 
 .shadow {
-  @apply shadow-slate-800 shadow-lg;
+  @apply shadow-slate-600 shadow-lg;
 }
 
 .gradient {

@@ -1,18 +1,49 @@
-.bgDisplay {
-  @apply py-[32%];
+.homepage {
+  background-image: url("src/assets/homeImg1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @apply py-[16%];
 }
 
-@media (min-width: 350px) {
+[data-testid="carousel"] > :nth-child(2) {
+  /* Your styles here */
+  opacity: 0.2;
+  width: 10%;
+}
+[data-testid="carousel-right-control"] span {
+  /* Your styles here */
+  @apply bg-gradient-to-t from-red-600 to-yellow-100 border-b-2 border-b-slate-600 shadow-slate-500 shadow-lg;
+}
+[data-testid="carousel-right-control"] svg {
+  /* Your styles here */
+  @apply text-neutral-900 scale-125;
 }
 
-@media (min-width: 768px) {
+[data-testid="carousel-left-control"] span {
+  /* Your styles here */
+  @apply bg-gradient-to-t from-red-600 to-yellow-100 border-b-2 border-b-slate-600 shadow-slate-500 shadow-lg;
+}
+[data-testid="carousel-left-control"] svg {
+  /* Your styles here */
+  @apply text-neutral-900 scale-125;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 350px) {
+}
+
+@media (max-width: 768px) {
+  .homeIntro {
+    @apply w-full;
+  }
+}
+
+@media (max-width: 1200px) {
 }
 
 @media (min-width: 1440px) {
-  .bgDisplay {
-    @apply py-[17%];
-  }
+}
+
+.showCaseImg {
+  @apply w-[55%] h-[79%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
 }

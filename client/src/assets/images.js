@@ -2,8 +2,8 @@
 import thaiBrand from "./thai-rest-brand.png";
 import scrollOpen from "./scrollOpen.png";
 import scrollClose from "./scrollClose.png";
-// design only
-// import display1 from "./display1.png";
+// design purposes only
+import homeDisplay1 from "./homeImg1.png";
 // // Menu
 import avocTemp from "./avocado-tempura.jpg";
 import bbqDuck from "./bbq-duck.jpg";
@@ -55,7 +55,9 @@ const images = {
     scrollOpen,
     scrollClose,
   },
-  design: {},
+  design: {
+    homeDisplay1,
+  },
   menu: {
     avocTemp,
     bbqDuck,
