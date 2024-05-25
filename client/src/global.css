@@ -64,10 +64,24 @@ body {
   @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100;
 }
 
-@media (min-width: 350px) {
+[data-testid="flowbite-footer"] img {
+  @apply w-20 h-20;
+}
+[data-testid="flowbite-footer-brand-span"] {
+  @apply text-red-500;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+[data-testid="footer-groupLink"] {
+  @apply text-red-950 rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw];
 }
 
-@media (min-width: 768px) {
+@media (max-width: 350px) {
+}
+
+@media (max-width: 768px) {
+  [data-testid="footer-groupLink"] {
+    @apply mx-auto;
+  }
 }
 
 @media (min-width: 1200px) {

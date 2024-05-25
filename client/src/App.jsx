@@ -1,7 +1,7 @@
 import "./global.css";
 import { Button, Timeline } from "flowbite-react";
 import { Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
+import FooterComponent from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import About from "./pages/About";
 import Menu from "./pages/Menu";
@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/menu" element={<Menu />} />
       </Routes>
-      <Footer />
+      <FooterComponent />
     </div>
   );
 }

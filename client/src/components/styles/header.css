@@ -2,8 +2,8 @@ a {
   @apply shadow-black font-semibold text-lg hover:text-white hover:font-bold;
 }
 
-ul {
-  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw] text-red-900;
+[data-testid="flowbite-navbar-collapse"] ul {
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw] text-red-950;
 }
 
 .scrollSpan {
