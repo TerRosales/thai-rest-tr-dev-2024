@@ -3,7 +3,7 @@ a {
 }
 
 ul {
-  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw];
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw] text-red-900;
 }
 
 .scrollSpan {

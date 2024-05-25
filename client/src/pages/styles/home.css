@@ -6,35 +6,49 @@
   @apply py-[16%];
 }
 
+.showCaseImg {
+  @apply w-[65%] h-[85%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
+}
+
 [data-testid="carousel"] > :nth-child(2) {
-  /* Your styles here */
   opacity: 0.2;
   width: 10%;
 }
 [data-testid="carousel-right-control"] span {
-  /* Your styles here */
   @apply bg-gradient-to-t from-red-600 to-yellow-100 border-b-2 border-b-slate-600 shadow-slate-500 shadow-lg;
 }
 [data-testid="carousel-right-control"] svg {
-  /* Your styles here */
   @apply text-neutral-900 scale-125;
 }
 
 [data-testid="carousel-left-control"] span {
-  /* Your styles here */
   @apply bg-gradient-to-t from-red-600 to-yellow-100 border-b-2 border-b-slate-600 shadow-slate-500 shadow-lg;
 }
 [data-testid="carousel-left-control"] svg {
-  /* Your styles here */
   @apply text-neutral-900 scale-125;
 }
 
+[data-testid="carousel"] > :nth-child(3),
+[data-testid="carousel"] > :nth-child(4) {
+  @apply p-0;
+}
+
 @media (max-width: 350px) {
+  .carousel {
+    @apply w-[95%];
+  }
 }
 
 @media (max-width: 768px) {
+  .homepage {
+    @apply flex-col justify-center;
+  }
+
   .homeIntro {
-    @apply w-full;
+    @apply w-full m-2 p-2 mb-[16vh];
+  }
+  .homeTopSection {
+    @apply w-full m-2 p-2;
   }
 }
 
@@ -42,8 +56,4 @@
 }
 
 @media (min-width: 1440px) {
-}
-
-.showCaseImg {
-  @apply w-[55%] h-[79%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
 }

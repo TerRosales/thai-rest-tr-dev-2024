@@ -20,10 +20,12 @@
 }
 
 body {
+  @apply bg-gradient-to-t from-red-500 to-yellow-200 text-lg;
+  color: #555;
 }
 
 .marginSmall {
-  @apply m-5 p-5;
+  @apply m-5 p-2;
 }
 
 .marginLarge {
@@ -35,11 +37,12 @@ body {
 }
 
 .textItem {
-  @apply text-xl font-normal;
+  @apply text-xl font-normal text-red-600;
 }
 
 .mainTitle {
-  @apply text-6xl font-extrabold italic;
+  @apply text-6xl font-extrabold italic text-red-500;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .text {

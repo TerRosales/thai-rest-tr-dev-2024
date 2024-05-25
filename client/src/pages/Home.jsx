@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Button, Timeline, Carousel } from "flowbite-react";
+import { Carousel } from "flowbite-react";
 import images from "../assets/images.js";
 import _ from "lodash";
 import "../global.css";
@@ -11,33 +10,36 @@ const Home = () => {
 
   const shuffledImages = _.shuffle(menuImages);
   return (
-    <div className="homepage flex">
-      <section className="min-h-screen flex h-[95vh] text-black-600 w-3/5">
-        <div className="homeIntro shadow rounded-2xl flex flex-col marginLarge p-10 bg-[rgba(245,245,245,0.6)]">
-          {/* Talk about the diverse menu */}
-          <section className="flex flex-col">
-            <h2 className="mainTitle">Lorem, ipsum dolor.</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestiae quis libero eaque ipsa accusamus deleniti blanditiis
-              harum quasi, consequuntur enim?
-            </p>
-          </section>
-        </div>
-      </section>
-      <section className="w-2/5 marginLarge">
-        <div className="flex flex-col marginSmal">
-          <h2 className="titleItem">Our Top Specialties</h2>
-          <p className="marginSmall bg-gradient-to-tl from-yellow-100 to-red-100">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
-            necessitatibus inventore minus eum recusandae! Accusantium suscipit
-            quod voluptatibus modi ducimus ad nesciunt quo quibusdam totam
-            soluta? Quo at saepe, nisi ipsa deserunt quae harum ex incidunt
-            architecto, libero vero perferendis sit voluptate delectus iure!
+    <div className="homepage flex justify-center items-center">
+      {/* Intro Section */}
+      <section className="homeIntro w-3/5 h-[60vh] shadow rounded-2xl flex flex-col bg-[rgba(255,255,255,0.7)] justify-center text-left marginLarge">
+        {/* Talk about the diverse menu */}
+        <h2 className="mainTitle my-5">Lorem, ipsum dolor.</h2>
+        <p className="my-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
+          quis libero eaque ipsa accusamus deleniti blanditiis harum quasi,
+          consequuntur enim?
+        </p>
+        <div className="relative flex">
+          <p className="absolute left-[55%] top-full mt-2 textItem">
+            Choose Your Heat Level
           </p>
         </div>
-        <div className="my-5 h-60 sm:h-64 xl:h-80 2xl:h-96">
-          <Carousel>
+      </section>
+
+      {/* Slider Section */}
+      <section className="homeTopSection justify-center flex flex-col w-2/5 h-[60vh] bg-[rgba(255,255,255,0.7)] shadow rounded-2xl marginLarge">
+        <h2 className="mainTitle my-5">Our Top Items</h2>
+        <p className="my-5">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+          necessitatibus inventore minus eum recusandae!
+        </p>
+        <div className="h-60 sm:h-64 xl:h-80 2xl:h-96">
+          <Carousel
+            pauseOnHover={true}
+            slideInterval={3000}
+            className="carousel"
+          >
             {shuffledImages.map((src, index) => (
               <div
                 key={index}
