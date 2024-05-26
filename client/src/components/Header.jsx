@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Navbar } from "flowbite-react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
@@ -46,7 +46,7 @@ const Header = () => {
             className="thaiRestLogo h-[9rem] w-[9rem] lg:w-[12rem] lg:h-[12rem]"
           />
         </NavLink>
-        <Navbar.Toggle className="flex  mx-2 h-10 text-red-900 gradient shadow  text-center gap-2 p-2" />
+        <Navbar.Toggle className="flex mx-2 h-10 text-red-900 gradient shadow  text-center gap-2 p-2" />
         <Navbar.Collapse
           className="text-black h-8
       pt-2"

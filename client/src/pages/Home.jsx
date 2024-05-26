@@ -20,7 +20,7 @@ const Home = () => {
           quis libero eaque ipsa accusamus deleniti blanditiis harum quasi,
           consequuntur enim?
         </p>
-        <div className="relative flex">
+        <div className="relative flex mb-10">
           <p className="absolute left-[55%] top-full mt-2 textItem">
             Choose Your Heat Level
           </p>
@@ -34,7 +34,7 @@ const Home = () => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
           necessitatibus inventore minus eum recusandae!
         </p>
-        <div className="h-60 sm:h-64 xl:h-80 2xl:h-96">
+        <div className="h-60 sm:h-64 xl:h-80 2xl:h-96 mb-2">
           <Carousel
             pauseOnHover={true}
             slideInterval={3000}

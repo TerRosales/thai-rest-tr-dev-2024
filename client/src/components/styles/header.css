@@ -3,14 +3,17 @@ a {
 }
 
 [data-testid="flowbite-navbar-collapse"] ul {
-  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw] text-red-950;
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw] mx-auto text-red-950;
 }
 
 .scrollSpan {
   text-shadow: 1px 1px 1px #333;
 }
 
-@media (min-width: 350px) {
+@media (max-width: 350px) {
+  [data-testid="flowbite-navbar-collapse"] ul {
+    @apply w-full mx-5;
+  }
 }
 
 @media (max-width: 768px) {
