@@ -1,7 +1,6 @@
 import "./global.css";
-import { Button, Timeline } from "flowbite-react";
 import { Routes, Route } from "react-router-dom";
-import FooterComponent from "./components/Footer";
+import FooterComponent from "./components/FooterSection";
 import HeroSection from "./components/HeroSection";
 import About from "./pages/About";
 import Menu from "./pages/Menu";

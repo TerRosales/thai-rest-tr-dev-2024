@@ -1,4 +1,5 @@
 .heroSection {
+  @apply w-full;
   background-image: url("src/assets/hero.png");
   background-size: cover;
   background-position: center;

@@ -3,6 +3,7 @@ import images from "../assets/images.js";
 import _ from "lodash";
 import "../global.css";
 import "./styles/home.css";
+import HomeTabs from "../components/HomeTabs.jsx";
 
 const Home = () => {
   // display all existing menu items
@@ -10,11 +11,10 @@ const Home = () => {
 
   const shuffledImages = _.shuffle(menuImages);
   return (
-    <div className="homepage flex justify-center items-center">
+    <div className="homepage grid grid-cols-2 justify-center items-center">
       {/* Intro Section */}
-      <section className="homeIntro w-3/5 h-[60vh] shadow rounded-2xl flex flex-col bg-[rgba(255,255,255,0.7)] justify-center text-left marginLarge">
-        {/* Talk about the diverse menu */}
-        <h2 className="mainTitle my-5">Lorem, ipsum dolor.</h2>
+      <section className="homeIntro h-[60vh] shadow rounded-2xl flex flex-col bg-[rgba(255,255,255,0.7)] justify-center text-left marginLarge">
+        <h2 className="mainTitle my-2">Lorem, ipsum dolor.</h2>
         <p className="my-5">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
           quis libero eaque ipsa accusamus deleniti blanditiis harum quasi,
@@ -28,8 +28,8 @@ const Home = () => {
       </section>
 
       {/* Slider Section */}
-      <section className="homeTopSection justify-center flex flex-col w-2/5 h-[60vh] bg-[rgba(255,255,255,0.7)] shadow rounded-2xl marginLarge">
-        <h2 className="mainTitle my-5">Our Top Items</h2>
+      <section className="homeTopSection justify-center flex flex-col h-[60vh] bg-[rgba(255,255,255,0.7)] shadow rounded-2xl marginLarge">
+        <h2 className="mainTitle my-2">Our Top Items</h2>
         <p className="my-5">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
           necessitatibus inventore minus eum recusandae!
@@ -54,6 +54,11 @@ const Home = () => {
             ))}
           </Carousel>
         </div>
+      </section>
+
+      {/* reviews */}
+      <section className="reviewsSection col-start-1 col-end-3 h-auto shadow rounded-2xl flex flex-col bg-[rgba(255,255,255,0.7)] marginLarge">
+        <HomeTabs />
       </section>
     </div>
   );

@@ -3,7 +3,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  @apply py-[16%];
+  @apply py-[2%];
 }
 
 .showCaseImg {
@@ -41,7 +41,7 @@
 
 @media (max-width: 768px) {
   .homepage {
-    @apply flex-col justify-center;
+    @apply flex flex-col justify-center p-5;
   }
 
   .homeIntro {

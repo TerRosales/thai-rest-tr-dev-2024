@@ -26,10 +26,6 @@ const menuItemSchema = new mongoose.Schema(
       required: true,
     },
     imagePath: { type: String, required: true, isAvailable: Boolean },
-    timeCook: {
-      type: Number,
-      enum: ["5", "10", "15", "20"],
-    },
   },
   { timestamps: true }
 );

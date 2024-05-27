@@ -10,6 +10,10 @@ const sizePriceSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  timeCook: {
+    type: Number,
+    enum: ["5", "10", "15", "20"],
+  },
 });
 
 const SizePrice = mongoose.model("SizePrice", sizePriceSchema);

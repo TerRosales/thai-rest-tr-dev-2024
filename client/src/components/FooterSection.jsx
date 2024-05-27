@@ -1,5 +1,6 @@
 import { Footer } from "flowbite-react";
 import images from "../assets/images.js";
+import "../global.css";
 
 const FooterComponent = () => {
   return (
@@ -10,7 +11,7 @@ const FooterComponent = () => {
             href="/"
             src={images.utility.thaiBrand}
             alt="Flowbite Logo"
-            name="Thai Rest. 24"
+            name="Thai Rest.™"
           />
           <Footer.LinkGroup>
             <Footer.Link href="/about">About</Footer.Link>
