@@ -4,6 +4,7 @@ import _ from "lodash";
 import "../global.css";
 import "./styles/home.css";
 import HomeTabs from "../components/HomeTabs.jsx";
+import ScrollBtn from "../components/ScrollBtn.jsx";
 
 const Home = () => {
   // display all existing menu items
@@ -55,7 +56,7 @@ const Home = () => {
           </Carousel>
         </div>
       </section>
-
+      <ScrollBtn />
       {/* reviews */}
       <section className="reviewsSection col-start-1 col-end-3 h-auto shadow rounded-2xl flex flex-col bg-[rgba(255,255,255,0.7)] marginLarge">
         <HomeTabs />

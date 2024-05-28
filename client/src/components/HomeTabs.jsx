@@ -29,38 +29,38 @@ const HomeTabs = () => {
       <div>
         <Tabs forceRenderTabPanel>
           <TabList>
-            <Tab>Our Perks</Tab>
+            <Tab>Latest News</Tab>
             <Tab>Reviews</Tab>
             <Tab>Location Info</Tab>
           </TabList>
           <TabPanel>
             <Tabs forceRenderTabPanel>
               <TabList>
-                <Tab>a </Tab>
-                <Tab> b</Tab>
-                <Tab> c</Tab>
-                <Tab> d</Tab>
-                <Tab> e</Tab>
+                <Tab>News</Tab>
+                <Tab>Upcoming Specials</Tab>
+                <Tab>Catering Specials</Tab>
+                <Tab>Our Team</Tab>
+                <Tab>Questions?</Tab>
               </TabList>
               <TabPanel>
-                <p>a</p>
+                <p>News</p>
                 <img src={images.menu.kaosoy} alt="Kao Soy" />
               </TabPanel>
               <TabPanel>
-                <p>b</p>
+                <p>Upcoming Specials</p>
                 <img src={images.menu.padThai} alt="Pad Thai" />
               </TabPanel>
               <TabPanel>
-                <p>c</p>
+                <p>Catering Specials</p>
                 <img src={images.menu.tomYum} alt="Tom Yum" />
               </TabPanel>
               <TabPanel>
-                <p>d</p>
-                <img src={images.menu.greenCurry} alt="Lisa Simpson" />
+                <p>Our Team</p>
+                <img src={images.menu.chopSuey} alt="Maggie Simpson" />
               </TabPanel>
               <TabPanel>
-                <p>e</p>
-                <img src={images.menu.chopSuey} alt="Maggie Simpson" />
+                <p>Questions?</p>
+                <img src={images.menu.greenCurry} alt="Lisa Simpson" />
               </TabPanel>
             </Tabs>
           </TabPanel>
@@ -72,7 +72,7 @@ const HomeTabs = () => {
                 </Tab>
               </TabList>
               <TabPanel>
-                <section className="reviewsTab">
+                <section className="reviewsTab flex flex-col">
                   <div className="reviews">
                     {limitedReviews.map((review) => (
                       <div key={review.userId} className="reviewCard">
@@ -94,15 +94,20 @@ const HomeTabs = () => {
                           <p className="reviewStars ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">
                             {review.rating} out of 5
                           </p>
-                          <p className="cardComment">
-                            {review.comment}{" "}
-                            <span className="cardDate">
-                              &nbsp;&mdash;&nbsp; {review.date}
-                            </span>
-                          </p>
+                          <div className="comment">
+                            <p className="cardComment">
+                              {review.comment}{" "}
+                              <span className="cardDate">
+                                &nbsp;&mdash;&nbsp; {review.date}
+                              </span>
+                            </p>
+                          </div>
                         </Rating>
                       </div>
                     ))}
+                  </div>
+                  <div className="h-[10vh]">
+                    <h1 className="mainTitle">NextSection</h1>
                   </div>
                 </section>
               </TabPanel>
