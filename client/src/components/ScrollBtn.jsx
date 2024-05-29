@@ -2,14 +2,12 @@ import { motion } from "framer-motion";
 import images from "../assets/images";
 import "../global.css";
 import { useRef, useEffect, useState } from "react";
-import { set } from "mongoose";
 
 const ScrollBtn = () => {
   const [elementIsVisible, setElementIsVisible] = useState(false);
   const [shouldRender, setShouldRender] = useState(false);
 
   const myRef = useRef();
-  console.log("elementIsVisible", elementIsVisible);
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {

@@ -1,3 +1,7 @@
+span {
+  text-decoration-color: rgba(255, 50, 50, 0.7);
+}
+
 .react-tabs__tab-panel img {
   @apply mx-auto w-[35%] h-[45%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
 }
@@ -8,15 +12,15 @@
 }
 
 .reviews {
-  @apply flex w-full mx-auto pr-10;
+  @apply grid grid-cols-2 w-full mx-auto pr-10;
 }
 
 .reviewCard {
-  @apply p-4 mx-auto my-4 rounded-xl border-r-[0.5px]  border-2 border-neutral-600 border-t-0  w-[17%] h-[40%] shadow-[rgba(3,3,3,0.4)] shadow-md bg-white;
+  @apply p-2 mx-auto my-4 rounded-xl border-r-[0.5px] border-2 border-neutral-600 border-t-0  w-[47%] h-[80%] shadow-[rgba(3,3,3,0.4)] shadow-md bg-white;
 }
 
 .cardUser {
-  @apply flex flex-col text-center p-10 h-[50%];
+  @apply flex flex-col text-center p-[5px] h-[50%];
 }
 
 .avatar {
@@ -24,11 +28,11 @@
 }
 
 .comment {
-  @apply py-10;
+  @apply py-[5px];
 }
 
 .cardComment {
-  @apply text-sm my-2;
+  @apply text-sm my-[2px];
   color: ;
 }
 
@@ -41,22 +45,56 @@
   @apply flex flex-wrap justify-start text-start;
 }
 
-/* REVIEWS TAB NEEDS ATTENTION WITH THE CARD SIZED!!!!!!!!!!!!!!! */
-/* REVIEWS TAB NEEDS ATTENTION WITH THE CARD SIZED!!!!!!!!!!!!!!! */
-/* REVIEWS TAB NEEDS ATTENTION WITH THE CARD SIZED!!!!!!!!!!!!!!! */
-/* REVIEWS TAB NEEDS ATTENTION WITH THE CARD SIZED!!!!!!!!!!!!!!! */
-/* REVIEWS TAB NEEDS ATTENTION WITH THE CARD SIZED!!!!!!!!!!!!!!! */
-/* REVIEWS TAB NEEDS ATTENTION WITH THE CARD SIZED!!!!!!!!!!!!!!! */
-/* REVIEWS TAB NEEDS ATTENTION WITH THE CARD SIZED!!!!!!!!!!!!!!! */
+.hoursDisplay {
+  @apply flex flex-col gap-5;
+}
+
+.apologyImg {
+  height: 60% !important;
+  width: 60% !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.directionsSection {
+  @apply w-full h-[50vh] items-center;
+}
+.hoursDisplay,
+.directionsSection {
+  @apply text-[20px];
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgba(100, 0, 0, 0.5);
+}
 @media (max-width: 350px) {
+  .apologyImg {
+    @apply py-2;
+    height: 90% !important;
+    width: 90% !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .directionsSection {
+    @apply flex-col;
+    overflow: scroll;
+  }
 }
 
 @media (max-width: 768px) {
+  .apologyImg {
+    @apply py-2;
+    height: 70% !important;
+    width: 85% !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  .directionsSection {
+    @apply flex-col;
+  }
   .reviews {
-    @apply flex-col pr-0;
+    @apply flex flex-col pr-0;
   }
   .reviewCard {
-    @apply w-[90%] h-[70%];
+    @apply w-[60%] h-[80%];
   }
   .reviewsTab {
     @apply m-1;
@@ -64,9 +102,6 @@
 }
 
 @media (max-width: 1200px) {
-  .reviewCard {
-    @apply h-[80%];
-  }
 }
 
 @media (max-width: 1440px) {

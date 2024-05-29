@@ -4,7 +4,6 @@ import _ from "lodash";
 import "../global.css";
 import "./styles/home.css";
 import HomeTabs from "../components/HomeTabs.jsx";
-import ScrollBtn from "../components/ScrollBtn.jsx";
 
 const Home = () => {
   // display all existing menu items
@@ -27,7 +26,6 @@ const Home = () => {
           </p>
         </div>
       </section>
-
       {/* Slider Section */}
       <section className="homeTopSection justify-center flex flex-col h-[60vh] bg-[rgba(255,255,255,0.7)] shadow rounded-2xl marginLarge">
         <h2 className="mainTitle my-2">Our Top Items</h2>
@@ -35,6 +33,7 @@ const Home = () => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
           necessitatibus inventore minus eum recusandae!
         </p>
+
         <div className="h-60 sm:h-64 xl:h-80 2xl:h-96 mb-2">
           <Carousel
             pauseOnHover={true}
@@ -56,7 +55,6 @@ const Home = () => {
           </Carousel>
         </div>
       </section>
-      <ScrollBtn />
       {/* reviews */}
       <section className="reviewsSection col-start-1 col-end-3 h-auto shadow rounded-2xl flex flex-col bg-[rgba(255,255,255,0.7)] marginLarge">
         <HomeTabs />

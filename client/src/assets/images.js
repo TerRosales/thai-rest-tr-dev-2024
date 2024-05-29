@@ -48,6 +48,7 @@ import thaiCoffee from "./thai-coffee.jpg";
 import thaiIceSalad from "./thai-ice-salad.jpg";
 import thaiTea from "./thai-tea.jpg";
 import tomYum from "./tom-yum.jpg";
+import apologyImg from "./apologyImg.png";
 
 const images = {
   utility: {
@@ -56,6 +57,7 @@ const images = {
     scrollClose,
   },
   design: {
+    apologyImg,
     homeDisplay1,
   },
   menu: {

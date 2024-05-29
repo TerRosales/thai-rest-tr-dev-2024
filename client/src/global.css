@@ -13,16 +13,18 @@
   padding: 0;
 }
 
-.react-tabs__tab:focus:after {
-  background: rgba(255, 50, 20, 0.9) !important;
-  height: 3px !important;
-}
-
 body {
   @apply bg-gradient-to-t from-red-500 to-yellow-200 text-lg;
   color: #555;
 }
+.mapContainer {
+  @apply w-[50%] h-[350px];
+}
 
+.react-tabs__tab:focus:after {
+  background: rgba(255, 50, 20, 0.9) !important;
+  height: 3px !important;
+}
 .marginSmall {
   @apply m-5 p-2;
 }
@@ -32,8 +34,9 @@ body {
 }
 
 .titleItem {
-  @apply text-xl font-bold;
+  @apply text-2xl font-bold underline underline-offset-2;
   text-shadow: 2px 2px 3px rgba(255, 50, 50, 0.4);
+  text-decoration-color: rgba(255, 50, 50, 0.7);
 }
 
 .textItem {
@@ -94,6 +97,12 @@ body {
   }
   [data-testid="flowbite-footer-brand"] {
     @apply flex flex-col;
+  }
+  .mapSection {
+    @apply flex-col;
+  }
+  .mapContainer {
+    @apply w-[100%];
   }
 }
 

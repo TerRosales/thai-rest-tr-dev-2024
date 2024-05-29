@@ -1,10 +1,13 @@
 import "react-tabs/style/react-tabs.css";
 import { Rating } from "flowbite-react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+
 import images from "../assets/images.js";
 import "./styles/tabs.css";
 import "../global.css";
 import { data, defaultAvatars } from "./data.js";
+import ScrollBtn from "./ScrollBtn.jsx";
+import ThaiRestMap from "./ThaiRestMap.jsx";
 
 const HomeTabs = () => {
   // randomizer for default avatars
@@ -21,10 +24,13 @@ const HomeTabs = () => {
   }));
 
   // Limit the number of reviews to 4
-  const limitedReviews = updatedReviews.slice(0, 5);
+  const limitedReviews = updatedReviews.slice(0, 6);
 
   return (
     <div className="homeTabs">
+      <div className="secondScroller">
+        <ScrollBtn />
+      </div>
       <h2 className="mainTitle my-5">News and Updates</h2>
       <div>
         <Tabs forceRenderTabPanel>
@@ -36,18 +42,13 @@ const HomeTabs = () => {
           <TabPanel>
             <Tabs forceRenderTabPanel>
               <TabList>
-                <Tab>News</Tab>
-                <Tab>Upcoming Specials</Tab>
+                <Tab>Hard Hitter Specials</Tab>
                 <Tab>Catering Specials</Tab>
                 <Tab>Our Team</Tab>
                 <Tab>Questions?</Tab>
               </TabList>
               <TabPanel>
-                <p>News</p>
-                <img src={images.menu.kaosoy} alt="Kao Soy" />
-              </TabPanel>
-              <TabPanel>
-                <p>Upcoming Specials</p>
+                <p>Hard Hitter Specials</p>
                 <img src={images.menu.padThai} alt="Pad Thai" />
               </TabPanel>
               <TabPanel>
@@ -120,13 +121,56 @@ const HomeTabs = () => {
                 <Tab>Directions</Tab>
               </TabList>
               <TabPanel>
-                <div>
-                  <p>Map</p>
+                <div className="mapSection flex gap-10">
+                  <div className="mapContainer">
+                    <ThaiRestMap />
+                  </div>
+                  <div className="hoursDisplay font-semibold">
+                    <h2 className="titleItem">Hours</h2>
+                    <p>Monday: 9am to 11pm</p>
+                    <p>Tuesday: 9am to 11pm</p>
+                    <p>Wednesday: 9am to 11pm</p>
+                    <p>Thursday: 9am to 11pm</p>
+                    <p>Friday: 9am to 11pm</p>
+                    <p>Saturday: 9am to 11pm</p>
+                    <p>Sunday: 9am to 11pm</p>
+                    <p>
+                      Questions? Please Call{" "}
+                      <span className="underline underline-offset-2">
+                        000-000-0000
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </TabPanel>
               <TabPanel>
-                <div>
-                  <p>Directions</p>
+                <div className="flex directionsSection p-5">
+                  <section className="flex flex-col gap-2 mx-2">
+                    <span className="underline underline-offset-2">
+                      Need more help locating us?
+                    </span>
+                    <p>
+                      Call us at{" "}
+                      <span className="underline underline-offset-2">
+                        000-000-0000
+                      </span>
+                    </p>
+                    <p>
+                      One of our associates will be more than happy to assist
+                      you.
+                    </p>
+                    <p>
+                      We apologize in advance,We Hope to serve you soon, Thank
+                      you for choosing us!
+                    </p>
+                  </section>
+                  <section>
+                    <img
+                      className="apologyImg"
+                      src={images.design.apologyImg}
+                      alt=""
+                    />
+                  </section>
                 </div>
               </TabPanel>
             </Tabs>
