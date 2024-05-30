@@ -6,6 +6,10 @@
   @apply py-[2%];
 }
 
+.homeTopSection {
+  @apply mb-16 !important;
+}
+
 .showCaseImg {
   @apply w-[65%] h-[85%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
 }

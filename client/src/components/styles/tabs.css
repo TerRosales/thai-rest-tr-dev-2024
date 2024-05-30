@@ -1,3 +1,7 @@
+.homeTabs {
+  @apply pb-20;
+}
+
 span {
   text-decoration-color: rgba(255, 50, 50, 0.7);
 }

@@ -17,6 +17,16 @@ body {
   @apply bg-gradient-to-t from-red-500 to-yellow-200 text-lg;
   color: #555;
 }
+
+.heroSection {
+  @apply w-full;
+  background: url("../hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
 .mapContainer {
   @apply w-[50%] h-[350px];
 }

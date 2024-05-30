@@ -42,13 +42,13 @@ const HomeTabs = () => {
           <TabPanel>
             <Tabs forceRenderTabPanel>
               <TabList>
-                <Tab>Hard Hitter Specials</Tab>
+                <Tab>Specials</Tab>
                 <Tab>Catering Specials</Tab>
                 <Tab>Our Team</Tab>
                 <Tab>Questions?</Tab>
               </TabList>
               <TabPanel>
-                <p>Hard Hitter Specials</p>
+                <p>Specials</p>
                 <img src={images.menu.padThai} alt="Pad Thai" />
               </TabPanel>
               <TabPanel>
