@@ -1,17 +1,16 @@
 import "react-tabs/style/react-tabs.css";
 import { Rating } from "flowbite-react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-
 import images from "../assets/images.js";
 import "./styles/tabs.css";
 import "../global.css";
 import { data, defaultAvatars } from "./data.js";
 import ScrollBtn from "./ScrollBtn.jsx";
 import ThaiRestMap from "./ThaiRestMap.jsx";
+import SpecialsTab from "./SpecialsTab.jsx";
 
 const HomeTabs = () => {
   // randomizer for default avatars
-
   const getRandomAvatar = () => {
     const randomIndex = Math.floor(Math.random() * defaultAvatars.length);
     return defaultAvatars[randomIndex];
@@ -27,7 +26,7 @@ const HomeTabs = () => {
   const limitedReviews = updatedReviews.slice(0, 6);
 
   return (
-    <div className="homeTabs">
+    <div className="homeTabs" id="about">
       <div className="secondScroller">
         <ScrollBtn />
       </div>
@@ -48,8 +47,9 @@ const HomeTabs = () => {
                 <Tab>Questions?</Tab>
               </TabList>
               <TabPanel>
-                <p>Specials</p>
-                <img src={images.menu.padThai} alt="Pad Thai" />
+                <div className="specialsTab">
+                  <SpecialsTab />
+                </div>
               </TabPanel>
               <TabPanel>
                 <p>Catering Specials</p>
@@ -107,9 +107,6 @@ const HomeTabs = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="h-[10vh]">
-                    <h1 className="mainTitle">NextSection</h1>
-                  </div>
                 </section>
               </TabPanel>
             </Tabs>
@@ -122,10 +119,10 @@ const HomeTabs = () => {
               </TabList>
               <TabPanel>
                 <div className="mapSection flex gap-10">
-                  <div className="mapContainer">
+                  <section className="mapContainer">
                     <ThaiRestMap />
-                  </div>
-                  <div className="hoursDisplay font-semibold">
+                  </section>
+                  <section className="hoursDisplay font-semibold">
                     <h2 className="titleItem">Hours</h2>
                     <p>Monday: 9am to 11pm</p>
                     <p>Tuesday: 9am to 11pm</p>
@@ -140,7 +137,7 @@ const HomeTabs = () => {
                         000-000-0000
                       </span>
                     </p>
-                  </div>
+                  </section>
                 </div>
               </TabPanel>
               <TabPanel>

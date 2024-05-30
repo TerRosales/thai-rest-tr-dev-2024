@@ -30,6 +30,9 @@ body {
 .mapContainer {
   @apply w-[50%] h-[350px];
 }
+.mapSection img {
+  box-shadow: none !important;
+}
 
 .react-tabs__tab:focus:after {
   background: rgba(255, 50, 20, 0.9) !important;
@@ -44,13 +47,13 @@ body {
 }
 
 .titleItem {
-  @apply text-2xl font-bold underline underline-offset-2;
+  @apply my-2 text-2xl font-bold underline underline-offset-2;
   text-shadow: 2px 2px 3px rgba(255, 50, 50, 0.4);
   text-decoration-color: rgba(255, 50, 50, 0.7);
 }
 
 .textItem {
-  @apply text-xl font-normal text-red-600;
+  @apply text-xl font-normal text-neutral-800;
 }
 
 .mainTitle {

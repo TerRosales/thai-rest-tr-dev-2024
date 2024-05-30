@@ -53,7 +53,7 @@ const Header = () => {
         >
           <NavLink to="/">Home</NavLink>
 
-          <NavLink to="/about">About</NavLink>
+          <a href="#about">About</a>
 
           <NavLink to="/menu">Menu</NavLink>
         </Navbar.Collapse>

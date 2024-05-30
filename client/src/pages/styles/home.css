@@ -7,11 +7,22 @@
 }
 
 .homeTopSection {
-  @apply mb-16 !important;
+  @apply mb-10 !important;
 }
 
 .showCaseImg {
-  @apply w-[65%] h-[85%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
+  @apply w-full h-[85%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
+}
+[data-testid="carousel-item"] {
+  width: 50%;
+  @apply mx-[50%];
+}
+
+[data-testid="carousel-item"] div {
+  width: 78% !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 [data-testid="carousel"] > :nth-child(2) {
@@ -47,17 +58,31 @@
   .homepage {
     @apply flex flex-col justify-center p-5;
   }
-
   .homeIntro {
-    @apply w-full m-2 p-2 mb-[16vh];
+    @apply w-full m-2 p-2 mb-[85px];
   }
   .homeTopSection {
     @apply w-full m-2 p-2;
   }
+  [data-testid="carousel-item"] {
+    width: 100%;
+    @apply mx-[50%];
+  }
 }
 
 @media (max-width: 1200px) {
+  [data-testid="carousel-item"] div {
+    background-size: cover !important;
+  }
+  [data-testid="carousel-item"] {
+    width: 90%;
+    @apply mx-[50%];
+  }
 }
 
 @media (min-width: 1440px) {
+  [data-testid="carousel-item"] {
+    width: 47%;
+    @apply mx-[50%];
+  }
 }

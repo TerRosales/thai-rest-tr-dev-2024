@@ -9,6 +9,9 @@ span {
 .react-tabs__tab-panel img {
   @apply mx-auto w-[35%] h-[45%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
 }
+.specialsTab {
+  @apply flex flex-col mx-auto;
+}
 
 .reviewsTab {
   @apply flex w-full m-5 justify-center h-[97vh];

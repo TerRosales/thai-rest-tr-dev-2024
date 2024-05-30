@@ -27,6 +27,51 @@ import defaultAvatar26 from "../assets/defaultAvatar26.jpg";
 import defaultAvatar27 from "../assets/defaultAvatar27.jpg";
 import defaultAvatar28 from "../assets/defaultAvatar28.jpg";
 
+export const specials = {
+  Main: {
+    "Combo Points": [
+      "Earn points with every combo meal purchase!",
+      "Get Every 6th Combo Meal with a free drink!",
+      "Get Every 12th Combo Meal for 10% off !!",
+      "Get Every 18th Combo Meal for 10% and a free drink of your choice% off!",
+      "Get Every 24th Combo Meal for 15% off !",
+      "Get Every 30th Combo Meal for 15% off and a free drink of your choice!",
+    ],
+    "Happy Hour": [
+      "Join us for Happy Hour every Friday to Sunday from 4pm to 7pm!",
+      "Enjoy 10% off all appetizers and drinks during Happy Hour!",
+    ],
+  },
+  Holidays: {
+    NewYears: {
+      date: "2023-01-01",
+      description: "Celebrate the start of the new year with us!",
+    },
+    Valentine: {
+      date: "2023-02-14",
+      description: "Enjoy a romantic dinner with your loved one.",
+    },
+    Easter: {
+      date: "2023-04-16",
+      description: "Join us for a special Easter celebration.",
+    },
+    FathersDay: {
+      date: "2023-06-18",
+      description: "Celebrate Father's Day with us in our party room!",
+    },
+    MothersDay: {
+      date: "2023-05-14",
+      description: "Celebrate Mother's Day with us in our party room!",
+    },
+    Christmas: {
+      date: "2023-12-25",
+      description: "Celebrate Christmas with us in our party room!",
+    },
+  },
+};
+
+export const cateringSpecials = {};
+
 export const data = {
   reviews: [
     {
