@@ -32,8 +32,9 @@ p {
   color: white;
 }
 .mapContainer {
-  @apply w-[50%] h-[350px];
+  @apply w-[50%] h-[350px] flex flex-col text-center justify-center mx-auto;
 }
+
 .mapSection img {
   box-shadow: none !important;
 }
@@ -51,7 +52,7 @@ p {
 }
 
 .titleItem {
-  @apply my-2 text-2xl font-bold underline underline-offset-2;
+  @apply my-4 text-5xl font-bold underline underline-offset-2;
   text-shadow: 2px 2px 3px rgba(255, 50, 50, 0.4);
   text-decoration-color: rgba(255, 50, 50, 0.7);
 }

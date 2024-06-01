@@ -14,15 +14,39 @@ span {
 }
 
 .reviewsTab {
-  @apply flex w-full m-5 justify-center h-[97vh];
+  @apply flex w-full m-2 justify-center h-[97vh];
 }
 
 .reviews {
   @apply grid grid-cols-2 w-full mx-auto pr-10;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* For Firefox */
+
+  /* Webkit-based browser scrollbar styling */
+  &::-webkit-scrollbar {
+    width: 12px; /* Adjust the width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; /* Make the track transparent */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: red; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Optional: Round the edges of the thumb */
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: darkred; /* Optional: Darker shade on hover */
+  }
+
+  /* Firefox scrollbar styling */
+  scrollbar-color: red transparent; /* Thumb color and track color */
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
 }
 
 .reviewCard {
-  @apply p-2 mx-auto my-4 rounded-xl border-r-[0.5px] border-2 border-neutral-600 border-t-0  w-[47%] h-[80%] shadow-[rgba(3,3,3,0.4)] shadow-md bg-white;
+  @apply flex flex-col p-2 mx-auto my-4 rounded-xl border-r-[0.5px] border-2 border-neutral-600 border-t-0  w-[67%] h-[96%] shadow-[rgba(3,3,3,0.4)] shadow-md bg-white;
 }
 
 .cardUser {
@@ -39,7 +63,6 @@ span {
 
 .cardComment {
   @apply text-sm my-[2px];
-  color: ;
 }
 
 .cardDate {
@@ -52,7 +75,7 @@ span {
 }
 
 .hoursDisplay {
-  @apply flex flex-col gap-5;
+  @apply flex flex-col justify-center text-center gap-5 mx-auto;
 }
 
 .apologyImg {
@@ -83,6 +106,16 @@ span {
     @apply flex-col;
     overflow: scroll;
   }
+  .comment {
+    @apply py-[2px];
+  }
+
+  .cardComment {
+    @apply text-xs my-[1px];
+  }
+  .reviewCard {
+    @apply w-[97%] text-xs !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -100,14 +133,24 @@ span {
     @apply flex flex-col pr-0;
   }
   .reviewCard {
-    @apply w-[60%] h-[80%];
+    @apply w-[80%] text-sm;
   }
   .reviewsTab {
     @apply m-1;
   }
+  .cardUser {
+    @apply flex flex-col text-center p-[2px] h-[44%];
+  }
+
+  .avatar {
+    @apply w-[2rem] h-[2rem] rounded-full !important;
+  }
 }
 
 @media (max-width: 1200px) {
+  .cardComment {
+    @apply text-[16px] !important;
+  }
 }
 
 @media (max-width: 1440px) {

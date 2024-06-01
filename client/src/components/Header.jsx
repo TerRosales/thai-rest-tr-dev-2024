@@ -52,9 +52,6 @@ const Header = () => {
       pt-2"
         >
           <NavLink to="/">Home</NavLink>
-
-          <a href="#about">About</a>
-
           <NavLink to="/menu">Menu</NavLink>
         </Navbar.Collapse>
       </Navbar>

@@ -26,7 +26,7 @@ const HomeTabs = () => {
   const limitedReviews = updatedReviews.slice(0, 6);
 
   return (
-    <div className="homeTabs" id="about">
+    <div className="homeTabs">
       <div className="secondScroller">
         <ScrollBtn />
       </div>
@@ -59,7 +59,7 @@ const HomeTabs = () => {
                     <span className="underline underline-offset-2">
                       000-000-0000
                     </span>{" "}
-                    fore more information
+                    for more information
                   </p>
                 </div>
               </TabPanel>
@@ -68,14 +68,12 @@ const HomeTabs = () => {
           <TabPanel>
             <Tabs forceRenderTabPanel>
               <TabList>
-                <Tab>
-                  <h2 className="titleItem">Reviews</h2>
-                </Tab>
+                <Tab>Reviews</Tab>
               </TabList>
               <TabPanel>
                 <section className="reviewsTab flex flex-col">
                   <div className="reviews">
-                    {limitedReviews.map((review) => (
+                    {updatedReviews.map((review) => (
                       <div key={review.userId} className="reviewCard">
                         <section className="cardUser">
                           <img
@@ -120,10 +118,16 @@ const HomeTabs = () => {
               <TabPanel>
                 <div className="mapSection flex gap-10">
                   <section className="mapContainer">
+                    <div className="flex">
+                      <p className="titleItem">We are located at:&nbsp;</p>
+                      <p className="titleItem mx-2 hover:bg-yellow-100 rounded-xl">
+                        📍 9999 NotKnown Ave. IDK, 49999
+                      </p>
+                    </div>
                     <ThaiRestMap />
                   </section>
                   <section className="hoursDisplay font-semibold">
-                    <h2 className="titleItem">Hours</h2>
+                    <h2 className="titleItem">Business Hours</h2>
                     <p>Monday: 9am to 11pm</p>
                     <p>Tuesday: 9am to 11pm</p>
                     <p>Wednesday: 9am to 11pm</p>
@@ -143,6 +147,9 @@ const HomeTabs = () => {
               <TabPanel>
                 <div className="flex directionsSection p-5">
                   <section className="flex flex-col gap-2 mx-2">
+                    <h2 className="titleItem">
+                      We Apologize for the Inconvenience!
+                    </h2>
                     <span className="underline underline-offset-2">
                       Need more help locating us?
                     </span>

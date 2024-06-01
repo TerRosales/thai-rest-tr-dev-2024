@@ -19,11 +19,7 @@ const Home = () => {
           Experience the finest cuisine in a cozy and elegant atmosphere.
           Indulge in our exquisite dishes and exceptional service. We offer a
           variety of dishes to suit every taste. Our menu is carefully crafted
-          to ensure that you have a memorable dining experience. Whether you are
-          looking for a quick bite or a full meal, we have something for
-          everyone. Our chefs use only the freshest ingredients to create dishes
-          that are bursting with flavor. We look forward to welcoming you to our
-          restaurant soon!
+          to ensure that you have a memorable dining experience.
         </p>
       </section>
       {/* Slider Section */}
@@ -31,12 +27,7 @@ const Home = () => {
         <h2 className="mainTitle my-2">Our Top Items</h2>
         <p className="my-5">
           Our top items are carefully selected to provide you with the best
-          dining experience. From appetizers to desserts, we have something for
-          everyone. Our chefs use only the freshest ingredients to create dishes
-          that are bursting with flavor. Whether you are looking for a quick
-          bite or a full meal, we have something for everyone. Our menu is
-          carefully crafted to ensure that you have a memorable dining
-          experience. We look forward to welcoming you to our restaurant soon!
+          dining experience.
         </p>
 
         <div className="h-60 sm:h-64 xl:h-70 2xl:h-96 mb-2">
