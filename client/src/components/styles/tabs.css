@@ -94,6 +94,14 @@ span {
   letter-spacing: 2px;
   text-shadow: 1px 1px 1px rgba(100, 0, 0, 0.5);
 }
+
+.cateringImages {
+  @apply flex flex-wrap justify-center gap-5;
+}
+
+.cateringImages img {
+  @apply w-[30%] h-[30%] rounded-lg shadow-md shadow-[#444] border-2 border-t-0 border-r-0 border-b-gray-800 border-l-gray-600;
+}
 @media (max-width: 350px) {
   .apologyImg {
     @apply py-2;
@@ -119,6 +127,12 @@ span {
 }
 
 @media (max-width: 768px) {
+  .cateringImages {
+    @apply flex-col;
+  }
+  .cateringImages img {
+    @apply w-[80%] h-[80%];
+  }
   .apologyImg {
     @apply py-2;
     height: 70% !important;

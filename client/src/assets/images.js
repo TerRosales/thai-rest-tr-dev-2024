@@ -49,6 +49,14 @@ import thaiIceSalad from "./thai-ice-salad.jpg";
 import thaiTea from "./thai-tea.jpg";
 import tomYum from "./tom-yum.jpg";
 import apologyImg from "./apologyImg.png";
+import cater1 from "./cater1.jpg";
+import cater2 from "./cater2.jpg";
+import cater3 from "./cater3.jpg";
+import cater4 from "./cater4.jpg";
+import cater5 from "./cater5.jpg";
+import cater6 from "./cater6.jpg";
+import cater7 from "./cater7.jpg";
+import cater8 from "./cater8.jpg";
 
 const images = {
   utility: {
@@ -59,6 +67,7 @@ const images = {
   design: {
     apologyImg,
     homeDisplay1,
+    cater: [cater1, cater2, cater3, cater4, cater5, cater6, cater7, cater8],
   },
   menu: {
     avocTemp,

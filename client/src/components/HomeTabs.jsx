@@ -50,17 +50,29 @@ const HomeTabs = () => {
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="cateringSpecialsTab flex flex-col gap-4 👉">
-                  <p className="titleItem">Catering Specials</p>
-                  <p>👉 We price our caterings orders per container. </p>
-                  <p>👉 Each container serves 10 people.</p>
-                  <p>
-                    👉 Call{" "}
-                    <span className="underline underline-offset-2">
-                      000-000-0000
-                    </span>{" "}
-                    for more information
-                  </p>
+                <div className="cateringSpecialsTab flex flex-col gap-4">
+                  <section className="cateringTips">
+                    <p className="titleItem">Catering Specials</p>
+                    <p>👉 We price our catering orders per container. </p>
+                    <p>👉 Each container serves 8 - 10 people.</p>
+                    <p>
+                      📞 Call{" "}
+                      <span className="underline underline-offset-2">
+                        000-000-0000
+                      </span>{" "}
+                      for more information
+                    </p>
+                  </section>
+                  <section className="cateringImages">
+                    {Object.keys(images.design.cater).map((key) => (
+                      <img
+                        key={key}
+                        className="caterImage"
+                        src={images.design.cater[key]}
+                        alt=""
+                      />
+                    ))}{" "}
+                  </section>
                 </div>
               </TabPanel>
             </Tabs>
@@ -136,7 +148,7 @@ const HomeTabs = () => {
                     <p>Saturday: 9am to 11pm</p>
                     <p>Sunday: 9am to 11pm</p>
                     <p>
-                      Questions? Please Call{" "}
+                      📞 Questions? Please Call{" "}
                       <span className="underline underline-offset-2">
                         000-000-0000
                       </span>
@@ -147,25 +159,25 @@ const HomeTabs = () => {
               <TabPanel>
                 <div className="flex directionsSection p-5">
                   <section className="flex flex-col gap-2 mx-2">
-                    <h2 className="titleItem">
+                    <h2 className="font-extrabold underline underline-offset-2 decoration-red-600 text-2xl my-5">
                       We Apologize for the Inconvenience!
                     </h2>
                     <span className="underline underline-offset-2">
-                      Need more help locating us?
+                      ❓ Need more help locating us?
                     </span>
                     <p>
-                      Call us at{" "}
+                      📞 Call us at{" "}
                       <span className="underline underline-offset-2">
                         000-000-0000
                       </span>
                     </p>
                     <p>
-                      One of our associates will be more than happy to assist
+                      👩‍💼 One of our associates will be more than happy to assist
                       you.
                     </p>
                     <p>
-                      We apologize in advance,We Hope to serve you soon, Thank
-                      you for choosing us!
+                      🙏 We apologize in advance,We Hope to serve you soon,
+                      Thank you for choosing us!
                     </p>
                   </section>
                   <section>

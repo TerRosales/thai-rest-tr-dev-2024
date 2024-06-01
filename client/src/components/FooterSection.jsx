@@ -1,4 +1,5 @@
 import { Footer } from "flowbite-react";
+import { Link } from "react-router-dom";
 import images from "../assets/images.js";
 import "../global.css";
 
@@ -14,9 +15,9 @@ const FooterComponent = () => {
             name="Thai Rest.™"
           />
           <Footer.LinkGroup>
-            <Footer.Link href="/about">About</Footer.Link>
-            <Footer.Link href="/menu">Menu</Footer.Link>
-            <Footer.Link href="/contact">Contact</Footer.Link>
+            <Link to="/">About</Link>
+            <Link to="/menu">Menu</Link>
+            <Link to="/contact">Contact</Link>
           </Footer.LinkGroup>
         </div>
         <Footer.Divider />

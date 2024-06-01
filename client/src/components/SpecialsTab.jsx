@@ -19,7 +19,7 @@ const SpecialsTab = () => {
 
         if (Array.isArray(subCategoryContent)) {
           sectionContent.push(
-            <p key={`${category}-${subcategory}`}>
+            <p className="text-red-800" key={`${category}-${subcategory}`}>
               <span className="mx-2">🔥</span>
               {subcategory}
             </p>
@@ -28,7 +28,7 @@ const SpecialsTab = () => {
             sectionContent.push(
               <p
                 key={`${category}-${subcategory}-${index}`}
-                className="textItem"
+                className="font-semibold text-lg text-neutral-700"
               >
                 {item}
               </p>
@@ -36,13 +36,13 @@ const SpecialsTab = () => {
           });
         } else {
           sectionContent.push(
-            <p key={`${category}-${subcategory}-title`} className="textItem">
+            <p key={`${category}-${subcategory}-title`}>
               <span className="mx-2">🎉</span>
               {subcategory}
             </p>
           );
           sectionContent.push(
-            <p key={`${category}-${subcategory}-date`} className="textItem">
+            <p key={`${category}-${subcategory}-date`}>
               <span className="text-red-800">Date:&nbsp;</span>
               {subCategoryContent.date}
             </p>
