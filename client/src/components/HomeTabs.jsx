@@ -43,8 +43,6 @@ const HomeTabs = () => {
               <TabList>
                 <Tab>Specials</Tab>
                 <Tab>Catering Specials</Tab>
-                <Tab>Our Team</Tab>
-                <Tab>Questions?</Tab>
               </TabList>
               <TabPanel>
                 <div className="specialsTab">
@@ -52,16 +50,18 @@ const HomeTabs = () => {
                 </div>
               </TabPanel>
               <TabPanel>
-                <p>Catering Specials</p>
-                <img src={images.menu.tomYum} alt="Tom Yum" />
-              </TabPanel>
-              <TabPanel>
-                <p>Our Team</p>
-                <img src={images.menu.chopSuey} alt="Maggie Simpson" />
-              </TabPanel>
-              <TabPanel>
-                <p>Questions?</p>
-                <img src={images.menu.greenCurry} alt="Lisa Simpson" />
+                <div className="cateringSpecialsTab flex flex-col gap-4 👉">
+                  <p className="titleItem">Catering Specials</p>
+                  <p>👉 We price our caterings orders per container. </p>
+                  <p>👉 Each container serves 10 people.</p>
+                  <p>
+                    👉 Call{" "}
+                    <span className="underline underline-offset-2">
+                      000-000-0000
+                    </span>{" "}
+                    fore more information
+                  </p>
+                </div>
               </TabPanel>
             </Tabs>
           </TabPanel>

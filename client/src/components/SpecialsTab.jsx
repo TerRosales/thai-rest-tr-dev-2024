@@ -43,13 +43,13 @@ const SpecialsTab = () => {
           );
           sectionContent.push(
             <p key={`${category}-${subcategory}-date`} className="textItem">
-              <span className="text-red-800">Date:</span>
+              <span className="text-red-800">Date:&nbsp;</span>
               {subCategoryContent.date}
             </p>
           );
           sectionContent.push(
             <p key={`${category}-${subcategory}-description`}>
-              <span className="text-red-800">Description:</span>{" "}
+              <span className="text-red-800">Description:&nbsp;</span>{" "}
               {subCategoryContent.description}
             </p>
           );
