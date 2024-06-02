@@ -1,0 +1,19 @@
+h5 {
+  @apply bg-white p-3 rounded-xl;
+}
+
+h5 svg {
+  @apply text-red-500;
+}
+
+[aria-label="Default sidebar example"] {
+  @apply bg-white rounded-2xl;
+}
+
+[data-testid="flowbite-drawer-items"] svg {
+  @apply text-red-500 !important;
+}
+
+[data-testid="flowbite-drawer-items"] span {
+  @apply text-red-950 !important;
+}

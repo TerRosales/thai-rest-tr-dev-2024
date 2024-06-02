@@ -85,6 +85,10 @@ p {
   @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100;
 }
 
+.gradient-flip {
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-yellow-100 to-red-600;
+}
+
 [data-testid="flowbite-footer"] img {
   @apply w-20 h-20;
 }
@@ -93,7 +97,7 @@ p {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 [data-testid="footer-groupLink"] {
-  @apply text-red-950 rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-2 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw];
+  @apply text-red-950 rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-5 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw];
 }
 
 .react-tabs__tab--selected {

@@ -55,10 +55,8 @@ const SpecialsTab = () => {
           );
         }
       }
-
       sections.push(<section key={category}>{sectionContent}</section>);
     }
-
     return sections;
   };
 
