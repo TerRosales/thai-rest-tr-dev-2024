@@ -13,6 +13,7 @@ const Menu = () => {
 
   return (
     <>
+      {/* main MENU body */}
       <div className="flex min-h-[100vh] justify-center">
         <Button
           className=" w-[95] h-[43px] border-[1px] border-yellow-200"
@@ -22,23 +23,19 @@ const Menu = () => {
           Select Dish
         </Button>
       </div>
+      {/* Drawers */}
       <Drawer open={isOpen} onClose={handleClose} className="gradient-flip">
         <img
-          className="w-[55%] h-[20%] mx-auto"
+          className="w-[54%] h-[18%] mx-auto"
           src={images.utility.thaiBrand}
           alt=""
         />
         <Drawer.Header title="Menu" />
         <Drawer.Items>
-          <Sidebar aria-label="Default sidebar example">
+          <Sidebar aria-label="sidebarThai">
             <Sidebar.Items>
               <Sidebar.ItemGroup>
-                <Sidebar.Item
-                  href="#"
-                  label="August"
-                  labelColor="failure"
-                  icon={HiViewBoards}
-                >
+                <Sidebar.Item href="#" icon={HiViewBoards}>
                   Top Dishes
                 </Sidebar.Item>
                 <Sidebar.Item href="#" icon={HiViewBoards}>
@@ -48,10 +45,7 @@ const Menu = () => {
                   Filipino Courses
                 </Sidebar.Item>
                 <Sidebar.Item href="#" icon={HiViewBoards}>
-                  Chinese Courses
-                </Sidebar.Item>
-                <Sidebar.Item href="#" icon={HiViewBoards}>
-                  Burmses Courses
+                  Burmsese Courses
                 </Sidebar.Item>
               </Sidebar.ItemGroup>
               <Sidebar.ItemGroup>

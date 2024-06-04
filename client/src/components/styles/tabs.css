@@ -112,7 +112,6 @@ span {
   }
   .directionsSection {
     @apply flex-col;
-    overflow: scroll;
   }
   .comment {
     @apply py-[2px];
@@ -142,6 +141,7 @@ span {
   }
   .directionsSection {
     @apply flex-col;
+    overflow: scroll;
   }
   .reviews {
     @apply flex flex-col pr-0;

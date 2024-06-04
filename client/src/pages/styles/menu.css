@@ -7,7 +7,7 @@ h5 svg {
 }
 
 [aria-label="Default sidebar example"] {
-  @apply bg-white rounded-2xl;
+  @apply bg-white rounded-3xl shadow-lg;
 }
 
 [data-testid="flowbite-drawer-items"] svg {
