@@ -8,6 +8,14 @@ import Contact from "./pages/Contact";
 
 import ScrollBtn from "./components/ScrollBtn";
 
+import TopDishes from "./components/sidebarMenus/TopDishes";
+import ThaiCourses from "./components/sidebarMenus/ThaiCourses";
+import FilipinoCourses from "./components/sidebarMenus/FilipinoCourses";
+import BurmeseCourses from "./components/sidebarMenus/BurmeseCourses";
+import Beverages from "./components/sidebarMenus/Beverages";
+import Appetizers from "./components/sidebarMenus/Appetizers";
+import Dessert from "./components/sidebarMenus/Dessert";
+
 function App() {
   return (
     <div className="">
@@ -15,7 +23,15 @@ function App() {
       <ScrollBtn />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu/*" element={<Menu />}>
+          <Route path="top-dishes" element={<TopDishes />} />
+          <Route path="thai-courses" element={<ThaiCourses />} />
+          <Route path="filipino-courses" element={<FilipinoCourses />} />
+          <Route path="burmese-courses" element={<BurmeseCourses />} />
+          <Route path="beverages" element={<Beverages />} />
+          <Route path="appetizers" element={<Appetizers />} />
+          <Route path="dessert" element={<Dessert />} />
+        </Route>
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <FooterComponent />

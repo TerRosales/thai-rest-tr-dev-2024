@@ -17,3 +17,7 @@ h5 svg {
 [data-testid="flowbite-drawer-items"] span {
   @apply text-red-950 !important;
 }
+
+.sidebarLink a:active {
+  color: black;
+}

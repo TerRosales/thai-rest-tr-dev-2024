@@ -53,6 +53,7 @@ const Header = () => {
         >
           <NavLink to="/">Home</NavLink>
           <NavLink to="/menu">Menu</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
         </Navbar.Collapse>
       </Navbar>
     </motion.div>

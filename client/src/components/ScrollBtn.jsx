@@ -29,11 +29,11 @@ const ScrollBtn = () => {
     initial: { y: 0, opacity: 1 },
     animate: {
       y: [-5, 10, -5],
-      transition: { duration: 1.5, repeat: Infinity },
+      transition: { duration: 2, repeat: Infinity },
     },
     spinAndShrink: {
       rotate: [0, 360],
-      y: [-25, 30, 0],
+      y: [-20, 20, 0],
       scale: [1.4, 0],
       transition: { duration: 0.8, ease: "easeInOut", repeat: 0 },
     },

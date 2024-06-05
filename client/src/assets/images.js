@@ -49,6 +49,13 @@ import thaiIceSalad from "./thai-ice-salad.jpg";
 import thaiTea from "./thai-tea.jpg";
 import tomYum from "./tom-yum.jpg";
 import apologyImg from "./apologyImg.png";
+import sideMenuThai from "./sideMenuThai.png";
+import sideMenuFil from "./sideMenuFil.png";
+import sideMenuBurm from "./sideMenuBurm.png";
+import sideMenuBevs from "./sideMenuBevs.png";
+import sideMenuAppe from "./sideMenuAppe.png";
+import sideMenuDessert from "./sideMenuDessert.png";
+
 import cater1 from "./cater1.jpg";
 import cater2 from "./cater2.jpg";
 import cater3 from "./cater3.jpg";
@@ -63,6 +70,14 @@ const images = {
     thaiBrand,
     scrollOpen,
     scrollClose,
+    sidebar: [
+      sideMenuThai,
+      sideMenuFil,
+      sideMenuBurm,
+      sideMenuBevs,
+      sideMenuAppe,
+      sideMenuDessert,
+    ],
   },
   design: {
     apologyImg,
