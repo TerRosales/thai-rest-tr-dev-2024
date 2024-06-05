@@ -18,6 +18,7 @@ h5 svg {
   @apply text-red-950 !important;
 }
 
-.sidebarLink a:active {
-  color: black;
+.sidebarLink a:active,
+.sidebarLink a:focus {
+  @apply text-neutral-800 underline underline-offset-2 decoration-red-500;
 }

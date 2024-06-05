@@ -2,17 +2,8 @@ import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Drawer, Button, Sidebar } from "flowbite-react";
 import images from "../assets/images.js";
-import { HiViewBoards } from "react-icons/hi";
 import "../global.css";
 import "./styles/menu.css";
-// Import content components
-import TopDishes from "../components/sidebarMenus/TopDishes";
-import ThaiCourses from "../components/sidebarMenus/ThaiCourses";
-import FilipinoCourses from "../components/sidebarMenus/FilipinoCourses";
-import BurmeseCourses from "../components/sidebarMenus/BurmeseCourses";
-import Beverages from "../components/sidebarMenus/Beverages";
-import Appetizers from "../components/sidebarMenus/Appetizers";
-import Dessert from "../components/sidebarMenus/Dessert";
 
 const menuItems = [
   {
@@ -31,8 +22,8 @@ const menuItems = [
     icon: images.utility.sidebar[2],
   },
   {
-    route: "burmese-courses",
-    title: "Burmese Courses",
+    route: "myanmar-courses",
+    title: "Myanmar Courses",
     icon: images.utility.sidebar[3],
   },
   {
@@ -82,12 +73,16 @@ const Menu = () => {
         <Drawer.Header title="Menu" />
         <Drawer.Items>
           <Sidebar aria-label="sidebarThai">
-            <ul className="w-full p-4">
+            <ul className="w-full p-2">
               {menuItems.map((item, index) => (
-                <li className="flex flex-row" key={index}>
-                  <img src={item.icon} alt="" className="w-[30px]" />
+                <li className="flex flex-row m-2" key={index}>
+                  <img
+                    src={item.icon}
+                    alt={`${item.title} icon`}
+                    className="w-[30px] mr-[15px]"
+                  />
                   <span className="sidebarLink">
-                    <Link to={`/menu/${item.title}`}>{item.title}</Link>
+                    <Link to={`/menu/${item.route}`}>{item.title}</Link>
                   </span>
                 </li>
               ))}
