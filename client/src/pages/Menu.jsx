@@ -4,44 +4,7 @@ import { Drawer, Button, Sidebar } from "flowbite-react";
 import images from "../assets/images.js";
 import "../global.css";
 import "./styles/menu.css";
-
-const menuItems = [
-  {
-    route: "top-dishes",
-    title: "Top Dishes",
-    icon: images.utility.sidebar[0],
-  },
-  {
-    route: "thai-courses",
-    title: "Thai Courses",
-    icon: images.utility.sidebar[1],
-  },
-  {
-    route: "filipino-courses",
-    title: "Filipino Courses",
-    icon: images.utility.sidebar[2],
-  },
-  {
-    route: "myanmar-courses",
-    title: "Myanmar Courses",
-    icon: images.utility.sidebar[3],
-  },
-  {
-    route: "beverages",
-    title: "Beverages",
-    icon: images.utility.sidebar[4],
-  },
-  {
-    route: "appetizers",
-    title: "Appetizers",
-    icon: images.utility.sidebar[5],
-  },
-  {
-    route: "dessert",
-    title: "Dessert",
-    icon: images.utility.sidebar[0],
-  },
-];
+import { menuItems } from "../components/sidebarMenus/menuData.js";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
