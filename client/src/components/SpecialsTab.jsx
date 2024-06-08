@@ -28,7 +28,7 @@ const SpecialsTab = () => {
             sectionContent.push(
               <p
                 key={`${category}-${subcategory}-${index}`}
-                className="font-semibold text-lg text-neutral-700"
+                className="textItem"
               >
                 {item}
               </p>
@@ -36,19 +36,22 @@ const SpecialsTab = () => {
           });
         } else {
           sectionContent.push(
-            <p key={`${category}-${subcategory}-title`}>
+            <p className="textItem" key={`${category}-${subcategory}-title`}>
               <span className="mx-2">🎉</span>
               {subcategory}
             </p>
           );
           sectionContent.push(
-            <p key={`${category}-${subcategory}-date`}>
-              <span className="text-red-800">Date:&nbsp;</span>
+            <p className="textItem" key={`${category}-${subcategory}-date`}>
+              <span className="text-red-800 ">Date:&nbsp;</span>
               {subCategoryContent.date}
             </p>
           );
           sectionContent.push(
-            <p key={`${category}-${subcategory}-description`}>
+            <p
+              className="textItem"
+              key={`${category}-${subcategory}-description`}
+            >
               <span className="text-red-800">Description:&nbsp;</span>{" "}
               {subCategoryContent.description}
             </p>

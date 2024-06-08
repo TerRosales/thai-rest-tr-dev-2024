@@ -3,7 +3,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  @apply py-[2%];
 }
 
 .homeTopSection {
@@ -52,6 +51,9 @@
   .carousel {
     @apply w-[95%];
   }
+  .homeIntro {
+    @apply gap-2 !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -59,7 +61,7 @@
     @apply flex flex-col justify-center p-5;
   }
   .homeIntro {
-    @apply w-full m-2 p-2 mb-[85px];
+    @apply w-full m-2 p-2 mb-[85px] gap-5;
   }
   .homeTopSection {
     @apply w-full m-2 p-2;

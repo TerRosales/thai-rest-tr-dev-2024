@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const SizePrice = require("./sizePrice.model.js");
 
 const menuItemSchema = new mongoose.Schema(
   {
@@ -16,7 +15,19 @@ const menuItemSchema = new mongoose.Schema(
       type: Array,
       required: true,
     },
-    orderSize: [SizePrice],
+    sizes: {
+      type: String,
+      enum: ["small", "medium", "large", "cater", "caterLg"],
+      required: true,
+    },
+    price: {
+      type: Number,
+      required: true,
+    },
+    timeCook: {
+      type: Number,
+      enum: ["5", "10", "15", "20"],
+    },
     heatLevel: {
       type: String,
       enum: ["mild", "medium", "hot", "extra hot", "suicide"],
@@ -26,6 +37,9 @@ const menuItemSchema = new mongoose.Schema(
       required: true,
     },
     imagePath: { type: String, required: true, isAvailable: Boolean },
+    timesOrdered: {
+      type: Number,
+    },
   },
   { timestamps: true }
 );

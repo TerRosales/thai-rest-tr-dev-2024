@@ -58,15 +58,12 @@ p {
 }
 
 .textItem {
-  @apply text-xl font-normal text-neutral-800;
+  @apply text-[17px] font-normal text-neutral-900 !important;
 }
 
 .mainTitle {
   @apply text-5xl font-extrabold italic text-red-500;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-.text {
 }
 
 .scroller {

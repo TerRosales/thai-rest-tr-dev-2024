@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <div className="homepage grid grid-cols-2 justify-center items-center">
       {/* Intro Section */}
-      <section className="homeIntro h-[60vh] shadow rounded-2xl flex flex-col bg-[rgba(255,255,255,0.7)] justify-center text-left marginLarge">
+      <section className="homeIntro h-[60vh] shadow rounded-2xl flex flex-col bg-[rgba(255,255,255,0.7)] gap-10 justify-center text-left marginLarge">
         <h2 className="mainTitle my-2">Thai Rest. 24</h2>
-        <p className="my-5">
+        <p className="my-2 mx-4 textItem">
           Experience the finest cuisine in a cozy and elegant atmosphere.
           Indulge in our exquisite dishes and exceptional service. We offer a
           variety of dishes to suit every taste. Our menu is carefully crafted
@@ -25,7 +25,7 @@ const Home = () => {
       {/* Slider Section */}
       <section className="homeTopSection justify-center flex flex-col h-[60vh] bg-[rgba(255,255,255,0.7)] shadow rounded-2xl marginLarge">
         <h2 className="mainTitle my-2">Our Top Items</h2>
-        <p className="my-5">
+        <p className="textItem my-2 mx-4">
           Our top items are carefully selected to provide you with the best
           dining experience.
         </p>

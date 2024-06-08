@@ -53,9 +53,13 @@ const HomeTabs = () => {
                 <div className="cateringSpecialsTab flex flex-col gap-4">
                   <section className="cateringTips">
                     <p className="titleItem">Catering Specials</p>
-                    <p>👉 We price our catering orders per container. </p>
-                    <p>👉 Each container serves 8 - 10 people.</p>
-                    <p>
+                    <p className="textItem">
+                      👉 We price our catering orders per container.{" "}
+                    </p>
+                    <p className="textItem">
+                      👉 Each container serves 8 - 10 people.
+                    </p>
+                    <p className="textItem">
                       📞 Call{" "}
                       <span className="underline underline-offset-2">
                         000-000-0000
@@ -162,20 +166,20 @@ const HomeTabs = () => {
                     <h2 className="font-extrabold underline underline-offset-2 decoration-red-600 text-2xl my-5">
                       We Apologize for the Inconvenience!
                     </h2>
-                    <span className="underline underline-offset-2">
+                    <span className="underline underline-offset-2 texItem">
                       ❓ Need more help locating us?
                     </span>
-                    <p>
+                    <p className="textItem">
                       📞 Call us at{" "}
-                      <span className="underline underline-offset-2">
+                      <span className="font-bold underline underline-offset-2">
                         000-000-0000
                       </span>
                     </p>
-                    <p>
+                    <p className="textItem">
                       👩‍💼 One of our associates will be more than happy to assist
                       you.
                     </p>
-                    <p>
+                    <p className="textItem">
                       🙏 We apologize in advance,We Hope to serve you soon,
                       Thank you for choosing us!
                     </p>

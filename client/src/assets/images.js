@@ -51,10 +51,10 @@ import tomYum from "./tom-yum.jpg";
 import apologyImg from "./apologyImg.png";
 import sideMenuThai from "./sideMenuThai.png";
 import sideMenuFil from "./sideMenuFil.png";
-import sideMenuBurm from "./sideMenuBurm.png";
 import sideMenuBevs from "./sideMenuBevs.png";
 import sideMenuAppe from "./sideMenuAppe.png";
 import sideMenuDessert from "./sideMenuDessert.png";
+import sideMenuTop from "./sideMenuTop.png";
 
 import cater1 from "./cater1.jpg";
 import cater2 from "./cater2.jpg";
@@ -71,9 +71,9 @@ const images = {
     scrollOpen,
     scrollClose,
     sidebar: [
+      sideMenuTop,
       sideMenuThai,
       sideMenuFil,
-      sideMenuBurm,
       sideMenuBevs,
       sideMenuAppe,
       sideMenuDessert,
