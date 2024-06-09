@@ -58,7 +58,7 @@ p {
 }
 
 .textItem {
-  @apply text-[17px] font-normal text-neutral-900 !important;
+  @apply text-[14px] font-semibold text-neutral-900 !important;
 }
 
 .mainTitle {
@@ -74,12 +74,16 @@ p {
   @apply w-[4rem] h-[4rem] flex;
 }
 
+.sectionBg {
+  @apply bg-[rgba(255,255,255,0.7)];
+}
+
 .shadow {
   @apply shadow-slate-600 shadow-lg;
 }
 
 .gradient {
-  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100;
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-neutral-100 to-white;
 }
 
 .gradient-flip {
