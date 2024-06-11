@@ -26,6 +26,7 @@ const menuItemSchema = new mongoose.Schema(
     },
     timeCook: {
       type: Number,
+      required: true,
       enum: ["5", "10", "15", "20"],
     },
     heatLevel: {
@@ -36,9 +37,14 @@ const menuItemSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    isAvailable: {
+      type: Boolean,
+      default: true,
+    },
     imagePath: { type: String, required: true, isAvailable: Boolean },
     timesOrdered: {
       type: Number,
+      default: 0,
     },
   },
   { timestamps: true }

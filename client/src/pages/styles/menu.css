@@ -22,3 +22,18 @@ h5 svg {
 .sidebarLink a:focus {
   @apply text-neutral-800 underline underline-offset-2 decoration-red-500;
 }
+
+@media (max-width: 350px) {
+  .logo {
+    @apply w-[100%];
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    @apply w-[70%];
+  }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1440px) {
+}
