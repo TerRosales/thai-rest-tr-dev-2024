@@ -2,17 +2,17 @@ import images from "../../assets/images";
 
 export const menuItems = [
   {
-    route: "top-dishes",
+    route: "topdishes",
     title: "Top Dishes",
     icon: images.utility.sidebar[0],
   },
   {
-    route: "thai-courses",
+    route: "thaicourses",
     title: "Thai Courses",
     icon: images.utility.sidebar[1],
   },
   {
-    route: "filipino-courses",
+    route: "filipinocourses",
     title: "Filipino Courses",
     icon: images.utility.sidebar[2],
   },
@@ -27,14 +27,20 @@ export const menuItems = [
     icon: images.utility.sidebar[4],
   },
   {
-    route: "dessert",
-    title: "Dessert",
+    route: "desserts",
+    title: "Desserts",
     icon: images.utility.sidebar[5],
   },
 ];
 
 export const menuData = {
-  topDishes: {
+  defaultView: {
+    title: "Default View",
+    description: "Please select a menu category to view the items.",
+    route: "default-view",
+    items: [],
+  },
+  topdishes: {
     title: "Top Dishes",
     description: "Delicious top dishes from various cuisines.",
     route: "top-dishes",
@@ -48,9 +54,9 @@ export const menuData = {
       images.menu.calamariTemp,
     ],
   },
-  thaiCourses: {
+  thaicourses: {
     title: "Thai Courses",
-    description: "Delicious top dishes from various cuisines.",
+    description: "Delicious Thai courses.",
     route: "thai-courses",
     items: [
       images.menu.padThai,
@@ -70,9 +76,9 @@ export const menuData = {
       images.menu.tomYum,
     ],
   },
-  filipinoCourses: {
+  filipinocourses: {
     title: "Filipino Courses",
-    description: "Delicious top dishes from various cuisines.",
+    description: "Delicious Filipino courses.",
     route: "filipino-courses",
     items: [
       images.menu.liempoBBQ,
@@ -93,13 +99,13 @@ export const menuData = {
   },
   beverages: {
     title: "Beverages",
-    description: "Delicious top dishes from various cuisines.",
+    description: "Refreshing beverages.",
     route: "beverages",
     items: [images.menu.matchaTea, images.menu.thaiCoffee, images.menu.thaiTea],
   },
   appetizers: {
     title: "Appetizers",
-    description: "Delicious top dishes from various cuisines.",
+    description: "Tasty appetizers.",
     route: "appetizers",
     items: [
       images.menu.eggRolls,
@@ -115,7 +121,7 @@ export const menuData = {
   },
   desserts: {
     title: "Desserts",
-    description: "Delicious top dishes from various cuisines.",
+    description: "Sweet desserts.",
     route: "desserts",
     items: [
       images.menu.haloHalo,

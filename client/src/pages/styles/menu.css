@@ -28,13 +28,31 @@ h5 svg {
 }
 
 @media (max-width: 350px) {
+  .menuItem {
+    @apply flex-col;
+  }
+  .menuItemImg {
+    @apply w-[100%] h-[90%];
+  }
+  .menuItemIngridients {
+    @apply gap-2 mt-2;
+  }
+  .menuItemIngridients p {
+    @apply text-[19px] !important;
+  }
+  .heat {
+    @apply mr-[40%];
+  }
+  .heatAndPrice {
+    @apply flex-col items-center mx-auto border-t-2 border-b-2 border-red-500 pt-2;
+  }
   .logo {
     @apply w-[100%];
   }
 }
 @media (max-width: 768px) {
   .logo {
-    @apply w-[70%];
+    @apply w-[70%] h-[70%];
   }
 }
 @media (max-width: 1200px) {

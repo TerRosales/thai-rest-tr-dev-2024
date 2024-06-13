@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { Drawer, Button, Sidebar } from "flowbite-react";
-import images from "../assets/images.js";
+import { menuItems, menuData } from "../components/sidebarMenus/menuData";
+import images from "../assets/images";
 import "../global.css";
 import "./styles/menu.css";
-import { menuItems } from "../components/sidebarMenus/menuData.js";
-import DefaultMenuView from "../components/sidebarMenus/DefaultMenuView.jsx";
+import DefaultMenuView from "../components/sidebarMenus/DefaultMenuView";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,10 @@ const Menu = () => {
   };
 
   useEffect(() => {
-    if (location.pathname === "/menu") {
+    if (
+      location.pathname === "/menu" ||
+      location.pathname === "/menu/default-view"
+    ) {
       setMenuSelected(false);
     }
   }, [location.pathname]);
