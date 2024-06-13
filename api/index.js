@@ -29,3 +29,14 @@ mongoose
 app.get("/", (req, res) => {
   res.send("Api is running and ready and rollin` 🎸");
 });
+
+// Route to create a new menu item
+app.post("/dish-details", async (req, res) => {
+  try {
+    const menuItem = new MenuItem(req.body);
+    const savedMenuItem = await menuItem.save();
+    res.status(201).json(savedMenuItem);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});

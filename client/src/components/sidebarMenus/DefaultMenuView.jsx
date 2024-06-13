@@ -17,7 +17,7 @@ const DefaultMenuView = () => {
   };
   return (
     <>
-      <div className="defaultView max-w-6xl h-[70vh] p-2 flex flex-col text-center items-center">
+      <div className="defaultView w-full h-[70vh] p-2 flex flex-col text-center items-center">
         <div className="sectionBg shadow rounded-2xl py-5 px-2 flex flex-col w-[100%] text-center justify-center items-center">
           <h2 className="mb-10 text-3xl font-bold text-center">
             Thai Rest. 24
@@ -44,14 +44,20 @@ const DefaultMenuView = () => {
           <Modal.Body>
             <div>
               <section className="flex flex-col text-center">
-                <p>Calamari</p>
-                <figure className="p-5">
-                  <img
-                    className="rounded-3xl"
-                    src={images.menu.calamariGrilled}
-                    alt="sample"
-                  />
-                </figure>
+                <p className="mt-2 mb-10">Calamari</p>
+                <section className="flex flex-row">
+                  <figure className="flex justify-center">
+                    <img
+                      className="rounded-3xl w-[80%] h-[85%]"
+                      src={images.menu.calamariGrilled}
+                      alt="sample"
+                    />
+                  </figure>
+                <section className="p-2 flex flex-col text-left">
+                  <p>ingrediensts:</p>
+                  <span>calamari, oyster sauce, soy sauce, salt, black pepper, lemon grass, lemon juice...</span>
+                </section>
+                </section>
               </section>
               <section className="flex mx-6 justify-between">
                 <section className="w-[10%] flex">

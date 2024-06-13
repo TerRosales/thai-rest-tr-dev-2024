@@ -28,7 +28,7 @@ const Menu = () => {
   return (
     <>
       {/* main MENU body */}
-      <div className="flex flex-col items-center gap-10 p-10 justify-center">
+      <div className="flex flex-col items-center gap-10 mb-10 justify-center">
         <div className="selectedMenu">
           {menuSelected ? <Outlet /> : <DefaultMenuView />}
         </div>

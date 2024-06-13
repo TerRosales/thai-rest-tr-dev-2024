@@ -23,6 +23,10 @@ h5 svg {
   @apply text-neutral-800 underline underline-offset-2 decoration-red-500;
 }
 
+.selectedMenu {
+  @apply flex;
+}
+
 @media (max-width: 350px) {
   .logo {
     @apply w-[100%];
