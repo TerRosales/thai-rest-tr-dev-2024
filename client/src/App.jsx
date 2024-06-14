@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import ScrollBtn from "./components/ScrollBtn";
 import DefaultMenuView from "./components/sidebarMenus/DefaultMenuView";
 import GenericMenu from "./components/sidebarMenus/GenericMenu";
+import AdministratorComp from "./components/AdministratorComp";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path=":category" element={<GenericMenu />} />
         </Route>
         <Route path="/contact" element={<Contact />} />
+        <Route path="/restadmin" element={<AdministratorComp />} />
       </Routes>
       <FooterComponent />
     </div>
