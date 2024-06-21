@@ -30,7 +30,7 @@ const HomeTabs = () => {
       <div className="secondScroller">
         <ScrollBtn />
       </div>
-      <h2 className="mainTitle my-5">News and Updates</h2>
+      <h2 className="mainTitle my-5">We Can Cater Our Specials</h2>
       <div>
         <Tabs forceRenderTabPanel>
           <TabList>

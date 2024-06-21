@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import FooterComponent from "./components/FooterSection";
 import HeroSection from "./components/HeroSection";
 import Menu from "./pages/Menu";
@@ -9,6 +9,7 @@ import ScrollBtn from "./components/ScrollBtn";
 import DefaultMenuView from "./components/sidebarMenus/DefaultMenuView";
 import GenericMenu from "./components/sidebarMenus/GenericMenu";
 import AdministratorComp from "./components/AdministratorComp";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path=":category" element={<GenericMenu />} />
         </Route>
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/restadmin" element={<AdministratorComp />} />
       </Routes>
       <FooterComponent />

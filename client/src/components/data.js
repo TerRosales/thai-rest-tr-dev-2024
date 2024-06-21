@@ -28,7 +28,7 @@ import defaultAvatar27 from "../assets/defaultAvatar27.jpg";
 import defaultAvatar28 from "../assets/defaultAvatar28.jpg";
 
 export const specials = {
-  Main: {
+  Discounts: {
     "Combo Points": [
       "Earn points with every combo meal purchase!",
       "Get Every 6th Combo Meal with a free drink!",

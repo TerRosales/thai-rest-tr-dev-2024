@@ -1,12 +1,13 @@
 import React from "react";
+import "../global.css";
 import { TextInput, Textarea, Select, Button, Label } from "flowbite-react";
 
 const AdministratorComp = () => {
   return (
-    <div className="max-w-7xl flex mx-auto justify-center bg-white rounded-2xl py-10 mb-16">
-      <section>
+    <div className="max-w-7xl flex mx-auto justify-center gradient-flip rounded-2xl py-10 mb-16">
+      <section className="gradient w-[60%] p-5">
         {" "}
-        <h3 className="my-2 text-center underline decoration-red-600 underline-offset-2">
+        <h3 className="titleItem my-2 text-center underline decoration-red-600 underline-offset-2">
           Add Menu Item
         </h3>
         <form action="" className="flex flex-col gap-2">

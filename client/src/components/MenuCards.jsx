@@ -6,8 +6,12 @@ const MenuCards = ({ isOpen, handlePickMenuItem, handleCloseModal }) => {
   return (
     <div>
       <section>
-        <Button gradientDuoTone="pinkToOrange" onClick={handlePickMenuItem}>
-          Menu Card Button
+        <Button
+          className="border-[0.5px] border-yellow-200"
+          gradientDuoTone="pinkToOrange"
+          onClick={handlePickMenuItem}
+        >
+          Menu Item
         </Button>
       </section>
       <Modal show={isOpen} onClose={handleCloseModal}>

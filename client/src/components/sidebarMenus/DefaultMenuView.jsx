@@ -20,9 +20,7 @@ const DefaultMenuView = () => {
     <>
       <div className="defaultView w-full h-[70vh] p-2 flex flex-col text-center items-center">
         <div className="sectionBg shadow rounded-2xl py-5 px-2 flex flex-col w-[100%] text-center justify-center items-center">
-          <h2 className="mb-10 text-3xl font-bold text-center">
-            Thai Rest. 24
-          </h2>
+          <h2 className="mb-10 mainTitle text-center">Thai Rest. 24</h2>
           <img
             src={images.utility.thaiBrand}
             alt="Thai food"
