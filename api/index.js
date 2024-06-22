@@ -10,7 +10,6 @@ const authRoutes = require("./routes/auth.route.js");
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
 mongoose
   .connect(process.env.PRTMONGO)
@@ -32,6 +31,12 @@ app.get("/", (req, res) => {
 
 app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
+
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || "Internal Server Error";
+  return res.status(statusCode).json({ success: false, message, statusCode });
+});
 
 // log in and validation, only admins can create new accounts through their dashboard.
 

@@ -9,7 +9,7 @@ import ScrollBtn from "./components/ScrollBtn";
 import DefaultMenuView from "./components/sidebarMenus/DefaultMenuView";
 import GenericMenu from "./components/sidebarMenus/GenericMenu";
 import AdministratorComp from "./components/AdministratorComp";
-import Login from "./pages/Login";
+import Signin from "./pages/Signin";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path=":category" element={<GenericMenu />} />
         </Route>
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signin" element={<Signin />} />
         <Route path="/restadmin" element={<AdministratorComp />} />
       </Routes>
       <FooterComponent />
