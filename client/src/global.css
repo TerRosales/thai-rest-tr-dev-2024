@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=LXGW+WenKai+TC&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  font-family: "LXGW WenKai TC", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @apply bg-gradient-to-t from-red-500 to-yellow-200 text-lg;
+  font-weight: 700;
+  color: #555;
+}
+
+p {
+  @apply text-xl !important;
+}
+
+.heroSection {
+  @apply w-full;
+  background: url("../hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+.mapContainer {
+  @apply w-[50%] h-[350px] flex flex-col text-center justify-center mx-auto;
+}
+
+.mapSection img {
+  box-shadow: none !important;
+}
+
+.react-tabs__tab:focus:after {
+  background: rgba(255, 50, 20, 0.9) !important;
+  height: 3px !important;
+}
+.marginSmall {
+  @apply m-5 p-2;
+}
+
+.marginLarge {
+  @apply m-10 p-5;
+}
+
+.titleItem {
+  @apply my-4 text-4xl font-bold underline underline-offset-2;
+  text-shadow: 2px 2px 3px rgba(255, 50, 50, 0.4);
+  text-decoration-color: rgba(255, 50, 50, 0.7);
+}
+
+.textItem {
+  @apply text-[14px] font-semibold text-neutral-900 !important;
+}
+
+.mainTitle {
+  @apply text-5xl font-extrabold italic text-red-500;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.scroller {
+  transform: translateY(-23px);
+}
+
+.scrollBtn {
+  @apply w-[4rem] h-[4rem] flex;
+}
+
+.sectionBg {
+  @apply bg-[rgba(255,255,255,0.7)];
+}
+
+.shadow {
+  @apply shadow-slate-600 shadow-lg;
+}
+
+.gradient {
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-neutral-100 to-white;
+}
+
+.gradient-flip {
+  @apply rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-yellow-100 to-red-600;
+}
+
+[data-testid="flowbite-footer"] img {
+  @apply w-20 h-20;
+}
+[data-testid="flowbite-footer-brand-span"] {
+  @apply text-red-500;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+[data-testid="footer-groupLink"] {
+  @apply text-red-950 rounded-xl border-2 border-red-500 border-t-0 border-r-0 bg-gradient-to-t from-red-600 to-yellow-100 text-center gap-5 p-2 shadow-slate-800 shadow-lg justify-center w-[50vw];
+}
+
+.react-tabs__tab--selected {
+  @apply text-red-500 rounded-xl !important;
+}
+
+@media (max-width: 350px) {
+  body {
+    padding-left: 4px;
+  }
+  [data-testid="flowbite-navbar-toggle"] {
+    @apply scale-150;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-testid="footer-groupLink"] {
+    @apply mx-auto;
+  }
+  [data-testid="flowbite-footer-brand"] {
+    @apply flex flex-col;
+  }
+  .mapSection {
+    @apply flex-col;
+  }
+  .mapContainer {
+    @apply w-[100%];
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+}

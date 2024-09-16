@@ -1,0 +1,35 @@
+.heroTitle {
+  @apply text-red-600;
+}
+
+.heroIntro {
+  @apply flex flex-col text-pretty w-[60%] mx-auto;
+}
+
+.heroText {
+  @apply font-semibold text-lg text-red-600 text-left;
+}
+
+@media (max-width: 768px) {
+  .heroIntro {
+    @apply pt-[14%] pb-4;
+  }
+  .heroTitle {
+    @apply text-5xl !important;
+  }
+  .header {
+    @apply pt-[33vh] pb-[15vh];
+  }
+}
+
+@media (min-width: 350px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+}

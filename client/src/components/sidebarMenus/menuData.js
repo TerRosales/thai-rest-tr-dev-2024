@@ -1,0 +1,133 @@
+import images from "../../assets/images";
+
+export const menuItems = [
+  {
+    route: "topdishes",
+    title: "Top Dishes",
+    icon: images.utility.sidebar[0],
+  },
+  {
+    route: "thaicourses",
+    title: "Thai Courses",
+    icon: images.utility.sidebar[1],
+  },
+  {
+    route: "filipinocourses",
+    title: "Filipino Courses",
+    icon: images.utility.sidebar[2],
+  },
+  {
+    route: "beverages",
+    title: "Beverages",
+    icon: images.utility.sidebar[3],
+  },
+  {
+    route: "appetizers",
+    title: "Appetizers",
+    icon: images.utility.sidebar[4],
+  },
+  {
+    route: "desserts",
+    title: "Desserts",
+    icon: images.utility.sidebar[5],
+  },
+];
+
+export const menuData = {
+  defaultView: {
+    title: "Default View",
+    description: "Please select a menu category to view the items.",
+    route: "default-view",
+    items: [],
+  },
+  topdishes: {
+    title: "Top Dishes",
+    description: "Delicious top dishes from various cuisines.",
+    route: "top-dishes",
+    items: [
+      images.menu.graPow,
+      images.menu.porkAdobo,
+      images.menu.redCurry,
+      images.menu.pancit,
+      images.menu.greenCurry,
+      images.menu.liempoBBQ,
+      images.menu.calamariTemp,
+    ],
+  },
+  thaicourses: {
+    title: "Thai Courses",
+    description: "Delicious Thai courses.",
+    route: "thai-courses",
+    items: [
+      images.menu.padThai,
+      images.menu.padSew,
+      images.menu.quallEggs,
+      images.menu.namTok,
+      images.menu.pineappleRice,
+      images.menu.chopSuey,
+      images.menu.kaosoy,
+      images.menu.bbqDuck,
+      images.menu.chickenFeet,
+      images.menu.friedRice,
+      images.menu.namTok,
+      images.menu.redCurry,
+      images.menu.graPow,
+      images.menu.greenCurry,
+      images.menu.tomYum,
+    ],
+  },
+  filipinocourses: {
+    title: "Filipino Courses",
+    description: "Delicious Filipino courses.",
+    route: "filipino-courses",
+    items: [
+      images.menu.liempoBBQ,
+      images.menu.menudo,
+      images.menu.pinakbet,
+      images.menu.quarterBbq,
+      images.menu.porkChop,
+      images.menu.kaldereta,
+      images.menu.pancit,
+      images.menu.chopSuey,
+      images.menu.liempoBBQ,
+      images.menu.sinigang,
+      images.menu.miki,
+      images.menu.miso,
+      images.menu.sisig,
+      images.menu.sopas,
+    ],
+  },
+  beverages: {
+    title: "Beverages",
+    description: "Refreshing beverages.",
+    route: "beverages",
+    items: [images.menu.matchaTea, images.menu.thaiCoffee, images.menu.thaiTea],
+  },
+  appetizers: {
+    title: "Appetizers",
+    description: "Tasty appetizers.",
+    route: "appetizers",
+    items: [
+      images.menu.eggRolls,
+      images.menu.springRolls,
+      images.menu.siomai,
+      images.menu.siopao,
+      images.menu.fishballs,
+      images.menu.shrimpTemp,
+      images.menu.calamariGrilled,
+      images.menu.avocTemp,
+      images.menu.shrimpTemp,
+    ],
+  },
+  desserts: {
+    title: "Desserts",
+    description: "Sweet desserts.",
+    route: "desserts",
+    items: [
+      images.menu.haloHalo,
+      images.menu.mangoStickyRice,
+      images.menu.macaroniSalad,
+      images.menu.thaiIceSalad,
+    ],
+  },
+};
