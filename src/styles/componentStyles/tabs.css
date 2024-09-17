@@ -1,0 +1,4 @@
+/* In your tabs.css or custom styles */
+.MuiTab-root.Mui-selected {
+  color: red; /* Active tab color */
+}
