@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .color {
-  color: #ff544e;
+  color: rgb(255, 231, 230);
+  background: rgb(255, 64, 64);
 }
 
 @layer base {
@@ -61,6 +62,25 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+}
+
+/*Custom Scroll Props */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px; /* Adjust the width (for vertical scroll) */
+  height: 2px; /* Adjust the height (for horizontal scroll) */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #ffffff; /* White track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ff4d4d; /* Red thumb */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #ff8181; /* Slightly darker red when hovered */
 }
 
 @layer base {

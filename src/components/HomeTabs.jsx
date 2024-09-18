@@ -5,6 +5,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import "@/styles/componentStyles/tabs.css";
+import DealsTab from "./hometabs/DealsTab";
+import CateringTab from "./hometabs/CateringTab";
+import MapTab from "./hometabs/MapTab";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -48,7 +51,7 @@ export default function BasicTabs() {
         <Tabs
           value={value}
           onChange={handleChange}
-          aria-label="basic tabs example"
+          aria-label="Food Zone Tabs"
           className="tabs"
           indicatorColor="#ff544e"
           TabIndicatorProps={{
@@ -57,19 +60,19 @@ export default function BasicTabs() {
             },
           }}
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Our Deals" {...a11yProps(0)} />
+          <Tab label="Catering" {...a11yProps(1)} />
+          <Tab label="HOURS AND LOCATION" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        Item One
+        <DealsTab />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Item Two
+        <CateringTab />
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-        Item Three
+        <MapTab />
       </CustomTabPanel>
     </Box>
   );

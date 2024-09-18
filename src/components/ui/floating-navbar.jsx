@@ -75,7 +75,7 @@ export const FloatingNav = ({ navItems, className }) => {
             className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full hover:bg-red-100"
           >
             <span>Services</span>
-            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-red-300 hover:via-red-500 to-transparent  h-px" />
+            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-red-300 hover:via-red-500 to-transparent h-px" />
           </button>
           <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full hover:bg-red-100">
             <span>Order In</span>
