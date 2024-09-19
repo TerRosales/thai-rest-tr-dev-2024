@@ -28,78 +28,9 @@ const DealsTab = () => {
   return (
     <section className="max-w-7xl mx-auto py-12">
       {/* <!-- Title --> */}
-      <h1 className="text-4xl font-bold text-center text-red-500 mb-12">
-        Asia Delights Price Tiers
-      </h1>
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="bg-white shadow-lg rounded-lg p-8 text-center transform transition duration-300 hover:scale-105">
-          <h2 className="text-2xl font-semibold text-red-500 mb-4">
-            Basic Combo
-          </h2>
-          <p className="text-3xl font-bold text-gray-800 mb-4">$12.99</p>
-          <ul className="list-none mb-6 space-y-2">
-            <li>1 Main Combo Meal</li>
-            <li>
-              Choice of <em>Filipino Chicken Adobo</em>,{" "}
-              <em>Thai Basil Chicken</em>, <em>Burmese Noodles</em>, or{" "}
-              <em>Sweet & Sour Pork</em>
-            </li>
-            <li>
-              1 Drink: <em>Thai Iced Tea</em>,{" "}
-              <em>Filipino Sago&rsquo;t Gulaman</em>, or <em>Soda</em>
-            </li>
-          </ul>
-          <p className="italic text-gray-600">
-            Perfect for lunch breaks or casual dining!
-          </p>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-lg p-8 text-center transform transition duration-300 hover:scale-105">
-          <h2 className="text-2xl font-semibold text-red-500 mb-4">
-            Deluxe Combo
-          </h2>
-          <p className="text-3xl font-bold text-gray-800 mb-4">$18.99</p>
-          <ul className="list-none mb-6 space-y-2">
-            <li>1 Main Combo Meal</li>
-            <li>
-              1 Appetizer: <em>Burmese Samosa</em>, <em>Thai Spring Rolls</em>,
-              or <em>Pork Siomai</em>
-            </li>
-            <li>
-              1 Drink: <em>Thai Iced Tea</em>, <em>Filipino Sago’t Gulaman</em>,
-              or <em>Soda</em>
-            </li>
-          </ul>
-          <p className="italic text-gray-600">
-            Ideal for a full meal experience with a delightful starter!
-          </p>
-        </div>
-
-        <div className="bg-white shadow-lg rounded-lg p-8 text-center transform transition duration-300 hover:scale-105">
-          <h2 className="text-2xl font-semibold text-red-500 mb-4">
-            Premium Feast Combo
-          </h2>
-          <p className="text-3xl font-bold text-gray-800 mb-4">$24.99</p>
-          <ul className="list-none mb-6 space-y-2">
-            <li>1 Main Combo Meal</li>
-            <li>
-              1 Appetizer: <em>Burmese Samosa</em>, <em>Thai Spring Rolls</em>,
-              or <em>Pork Siomai</em>
-            </li>
-            <li>
-              1 Soup: <em>Tom Yum Soup</em> or{" "}
-              <em>Chinese Hot and Sour Soup</em>
-            </li>
-            <li>
-              1 Drink: <em>Thai Iced Tea</em>,{" "}
-              <em>Filipino Sago and Gulaman</em>, or <em>Soda</em>
-            </li>
-          </ul>
-          <p className="italic text-gray-600">
-            Perfect for date nights or when you want a little bit of everything!
-          </p>
-        </div>
-      </div> */}
+      <h4 className="text-4xl font-bold text-center text-red-500 mb-12">
+        Our Price Tiers
+      </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="bg-white shadow-lg rounded-lg relative p-8 text-center transform transition duration-300 hover:scale-105">
           <Image
@@ -116,15 +47,19 @@ const DealsTab = () => {
             Basic Combo
           </h2>
           <ul className="list-none mb-6 space-y-2">
-            <li>1 Main Combo Meal</li>
+            <li>
+              <span className="font-semibold text-red-500">1 Main </span> Combo
+              Meal
+            </li>
             <li>
               Choice of <em>Filipino Chicken Adobo</em>,{" "}
               <em>Thai Basil Chicken</em>, <em>Burmese Noodles</em>, or{" "}
               <em>Sweet & Sour Pork</em>
             </li>
             <li>
-              1 Drink: <em>Thai Iced Tea</em>,{" "}
-              <em>Filipino Sago&rsquo;t Gulaman</em>, or <em>Soda</em>
+              <span className="font-semibold text-red-500">1 Drink: </span>
+              <em>Thai Iced Tea</em>, <em>Filipino Sago&rsquo;t Gulaman</em>, or{" "}
+              <em>Soda</em>
             </li>
           </ul>
           <p className="italic text-gray-600">
@@ -147,14 +82,19 @@ const DealsTab = () => {
             Deluxe Combo
           </h2>
           <ul className="list-none mb-6 space-y-2">
-            <li>1 Main Combo Meal</li>
             <li>
-              1 Appetizer: <em>Burmese Samosa</em>, <em>Thai Spring Rolls</em>,
-              or <em>Pork Siomai</em>
+              <span className="font-semibold text-red-500">1 Main </span> Combo
+              Meal
             </li>
             <li>
-              1 Drink: <em>Thai Iced Tea</em>, <em>Filipino Sago’t Gulaman</em>,
-              or <em>Soda</em>
+              <span className="font-semibold text-red-500">1 Appetizer: </span>
+              <em>Burmese Samosa</em>, <em>Thai Spring Rolls</em>, or{" "}
+              <em>Pork Siomai</em>
+            </li>
+            <li>
+              <span className="font-semibold text-red-500">1 Drink: </span>{" "}
+              <em>Thai Iced Tea</em>, <em>Filipino Sago&rsquo;t Gulaman</em>, or{" "}
+              <em>Soda</em>
             </li>
           </ul>
           <p className="italic text-gray-600">
@@ -177,18 +117,23 @@ const DealsTab = () => {
             Premium Feast Combo
           </h2>
           <ul className="list-none mb-6 space-y-2">
-            <li>1 Main Combo Meal</li>
             <li>
-              1 Appetizer: <em>Burmese Samosa</em>, <em>Thai Spring Rolls</em>,
-              or <em>Pork Siomai</em>
+              <span className="font-semibold text-red-500">1 Main </span> Combo
+              Meal
             </li>
             <li>
-              1 Soup: <em>Tom Yum Soup</em> or{" "}
-              <em>Chinese Hot and Sour Soup</em>
+              <span className="font-semibold text-red-500">1 Appetizer: </span>{" "}
+              <em>Burmese Samosa</em>, <em>Thai Spring Rolls</em>, or{" "}
+              <em>Pork Siomai</em>
             </li>
             <li>
-              1 Drink: <em>Thai Iced Tea</em>,{" "}
-              <em>Filipino Sago and Gulaman</em>, or <em>Soda</em>
+              <span className="font-semibold text-red-500">1 Soup: </span>{" "}
+              <em>Tom Yum Soup</em> or <em>Chinese Hot and Sour Soup</em>
+            </li>
+            <li>
+              <span className="font-semibold text-red-500">1 Drink: </span>
+              <em>Thai Iced Tea</em>, <em>Filipino Sago and Gulaman</em>, or{" "}
+              <em>Soda</em>
             </li>
           </ul>
           <p className="italic text-gray-600">
@@ -229,9 +174,9 @@ const DealsTab = () => {
               id="add-ons-modal-title"
               variant="h6"
               component="h2"
-              className="mb-4 text-red-400"
+              className="mb-4 text-red-400 text-center"
             >
-              Enjoy Our Wide Selection of Add-ons!
+              Mouth Watering Add Ons
             </Typography>
             {/* Add-ons Grid - Tailwind Responsive Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
@@ -246,7 +191,10 @@ const DealsTab = () => {
                   <Typography variant="body2" className="text-gray-600">
                     {addOn.description}
                   </Typography>
-                  <Typography variant="h6" className="mt-2 text-red-500">
+                  <Typography
+                    variant="h6"
+                    className="mt-2 text-red-500 text-right"
+                  >
                     {addOn.price}
                   </Typography>
                 </div>
@@ -257,7 +205,7 @@ const DealsTab = () => {
               onClick={handleClose}
               variant="contained"
               color="error"
-              className="mt-4"
+              className="mt-6"
             >
               Close
             </Button>
