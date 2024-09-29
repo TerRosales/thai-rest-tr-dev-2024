@@ -1,0 +1,6 @@
+.menuHero {
+  background-image: url("/images/menu-hero.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

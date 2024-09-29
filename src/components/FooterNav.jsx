@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 const FooterNav = () => {
   return (
-    <footer className="bg-neutral-50-900 text-neutral-800 py-12 border-t border-gray-300">
+    <footer className="bg-neutral-50-900 text-neutral-800 py-12 border-t border-gray-300 mt-10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           {/* Logo Section */}

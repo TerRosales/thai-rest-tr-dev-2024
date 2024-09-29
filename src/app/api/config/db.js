@@ -12,7 +12,9 @@ const connectDB = async () => {
   }
   // Connect to the database
   try {
-    await mongoose.connect(process.env.MONGO_URL);
+    await mongoose.connect(process.env.MONGO_URL, {
+      dbName: "food-zone", // Explicitly connect to the correct database
+    });
     connected = true;
     console.log("Connected to database");
   } catch (error) {

@@ -99,7 +99,6 @@ export const products = [
     thumbnail:
       "https://firebasestorage.googleapis.com/v0/b/thai-rest-2024.appspot.com/o/thai-ice-salad.jpg?alt=media&token=2e32a943-ed21-4e53-b41a-e92860be1d9c",
   },
-
   {
     title: "Easy Eats",
     link: "https://firebasestorage.googleapis.com/v0/b/thai-rest-2024.appspot.com/o/pancit.jpg?alt=media&token=d4e991c2-a623-4706-887e-fb21e69c0856",

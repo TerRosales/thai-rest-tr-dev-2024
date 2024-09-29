@@ -2,10 +2,16 @@ import React from "react";
 import "@/styles/globals.css";
 import { Navbar } from "@/components/Navbar";
 import FooterNav from "@/components/FooterNav";
+
+export const metadata = {
+  title: "Food Zone",
+  description: "Food Zone",
+};
+
 const RootLayout = ({ children }) => {
   return (
     <html>
-      <body className="h-[500vh]">
+      <body className="">
         <Navbar />
         <main>{children}</main>
         <FooterNav />

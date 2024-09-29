@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { addOns } from "@/assets/data/data";
 import { Modal, Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
@@ -22,6 +22,29 @@ const modalStyle = {
 
 const DealsTab = () => {
   const [open, setOpen] = useState(false);
+  const [addOns, setAddOns] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchAddOns = async () => {
+      try {
+        const response = await fetch("/api/menu/add-ons");
+        if (!response.ok) {
+          throw new Error("Failed to fetch add-ons");
+        }
+
+        if (response.ok) {
+          console.log("response ok");
+          const data = await response.json();
+          setAddOns(data);
+        }
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchAddOns();
+  }, []);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -180,25 +203,31 @@ const DealsTab = () => {
             </Typography>
             {/* Add-ons Grid - Tailwind Responsive Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
-              {addOns.map((addOn, index) => (
-                <div
-                  key={index}
-                  className="p-4 bg-gray-100 rounded-lg shadow flex flex-col justify-between"
-                >
-                  <Typography variant="subtitle1" className="font-semibold">
-                    {addOn.name}
-                  </Typography>
-                  <Typography variant="body2" className="text-gray-600">
-                    {addOn.description}
-                  </Typography>
-                  <Typography
-                    variant="h6"
-                    className="mt-2 text-red-500 text-right"
+              {addOns.length > 0 ? (
+                addOns.map((addOn, index) => (
+                  <div
+                    key={index}
+                    className="p-4 bg-gray-100 rounded-lg shadow flex flex-col justify-between"
                   >
-                    {addOn.price}
-                  </Typography>
-                </div>
-              ))}
+                    <Typography variant="subtitle1" className="font-semibold">
+                      {addOn.name}
+                    </Typography>
+                    <Typography variant="body2" className="text-gray-600">
+                      {addOn.description}
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      className="mt-2 text-red-500 text-right"
+                    >
+                      {addOn.price}
+                    </Typography>
+                  </div>
+                ))
+              ) : (
+                <Typography variant="body1" className="text-center">
+                  No add-ons available.
+                </Typography>
+              )}
             </div>
             {/* Close Button */}
             <Button

@@ -16,7 +16,7 @@ const MapTab = () => {
           <h4 className="text-2xl font-semibold text-red-500 mb-4">
             Business Hours
           </h4>
-          <ul className="list-disc list-inside text-gray-700 py-6 mb-5">
+          <ul className="lg:list-disc  list-inside text-gray-700 py-6 mb-5">
             <li className="text-lg py-2">Monday - Thursday: 11 AM - 10 PM</li>
             <li className="text-lg py-2">Friday - Saturday: 11 AM - 11 PM</li>
             <li className="text-lg py-2">Sunday: 11 AM - 9 PM</li>
@@ -50,6 +50,9 @@ const MapTab = () => {
 
       {/* Google Maps Section */}
       <div className="w-full max-w-3xl shadow-lg rounded-lg overflow-hidden">
+        <h4 className="text-4xl font-bold text-red-500 mb-12 text-center">
+          Map Location
+        </h4>
         <GoogleMapComponent />
       </div>
     </div>
