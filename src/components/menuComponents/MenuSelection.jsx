@@ -50,13 +50,13 @@ export const menus = [
     image: "/images/catering-flag.png",
     description:
       "Bring the world’s finest flavors to your event with our bespoke catering services. Whether it’s a small gathering or a grand celebration, we curate personalized menus that showcase the best of Filipino, Thai, and Myanmar cuisine, ensuring your occasion is unforgettable.",
-    link: "https://restaurant.com/catering-services",
+    link: "/",
   },
   {
     title: "Extras",
     image: "/images/dessert-flag.png",
     description:
       "Indulge in a delightful array of appetizers and desserts that perfectly complement your meal. From crispy spring rolls to luscious coconut-infused sweets, every bite is a journey through the tropical flavors of Southeast Asia.",
-    link: "https://restaurant.com/desserts-appetizers",
+    link: "/",
   },
 ];
